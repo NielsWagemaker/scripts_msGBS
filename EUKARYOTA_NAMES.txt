@@ -1,0 +1,2089 @@
+Bretschneidera sinensis
+Dromaius novaehollandiae
+Hevea brasiliensis
+Phoenix dactylifera
+Branchiostoma floridae
+Trifolium microdon
+Diachasmimorpha sp. M131
+Sticholotis sp. ANIC-COL3621
+Dissostichus mawsoni
+Fraxinus gooddingii
+Anoplophora glabripennis
+Pantherophis guttatus
+Broussonetia papyrifera
+Helianthus paradoxus
+Drosophila subobscura
+Rhodanthemum gayanum
+Curculionidae sp. INB045
+Festuca saximontana
+Carlito syrichta
+Aegilops uniaristata
+Echinochloa phyllopogon
+Poecilia reticulata
+Erodium foetidum subsp. foetidum
+Schiedea haleakalensis
+Knautia dinarica
+Gymnogyps californianus
+Ixodes scapularis
+Lupinus angustifolius
+Onychostoma simum
+Festuca altissima
+Drosophila eugracilis
+Saussurea chabyoungsanica
+Gekko japonicus
+Llerasia caucana
+Panicum sumatrense
+Helianthus tuberosus;Helianthus petiolaris;Helianthus pauciflorus subsp. subrhomboideus
+Astelia pumila
+Poa alpina
+Aotus nancymaae
+Leishmania major strain Friedlin
+Platycodon grandiflorus
+Bouteloua gracilis
+Sterkiella histriomuscorum
+Dioscorea elephantipes
+Merxmuellera tsaratananensis
+Ooceraea biroi
+Festuca octoflora
+Arabis alpina
+Magnolia stellata
+Lecythis zabucajo
+Ceramium sungminbooi
+Dichaetaria wightii
+Spathiphyllum wallisii
+Zonotrichia albicollis
+Rhizostoma pulmo
+Penstemon gracilis
+Australopyrum retrofractum
+Cucurbita pepo subsp. pepo
+Knautia rupicola
+Artemisia frigida
+Ulex parviflorus subsp. parviflorus
+Schistosoma mansoni
+Saimiri boliviensis boliviensis
+Cryptotermes secundus
+Vigna radiata
+Hibiscus cannabinus
+Araucaria heterophylla
+Schmidtea mediterranea
+Mastocarpus papillatus
+Berosus sp. BMNH 1425169
+Artemisia capillaris
+Microdispidae sp. BOLD:ACK3606
+Ostreococcus lucimarinus CCE9901
+Nasutitermes takasagoensis
+Fargesia nitida
+Nelumbo nucifera
+Avena agadiriana
+Zalophus californianus
+Vicia sativa
+Hedychridium monochroum
+Wasmannia auropunctata
+Chamaecrista fasciculata
+Ostryopsis nobilis
+Cenchrus americanus
+Eisenia fetida
+Leptinotarsa dahlbomi
+Capra hircus
+Centaurea nigra
+Ceratomyxa longipes
+Oryzias latipes
+Secale strictum
+Betula pubescens
+Bromus vulgaris
+Leymus salinus
+Calliactis parasitica
+Varroa destructor
+Sinocyclocheilus anshuiensis
+Magnolia salicifolia
+Cancer pagurus
+Metastrongylus salmi
+Zizania latifolia
+Myrothamnus flabellifolia
+Vicia cracca
+Symphyocladia dendroidea
+Bos indicus x Bos taurus
+Poa asiae-minoris
+Ceratotherium simum simum
+Gossypium marchantii
+Ailuropoda melanoleuca
+Gypsophila paniculata
+Alchornea trewioides
+Cryptosporidium parvum
+Digitaria ischaemum
+Oncorhynchus tshawytscha
+Cryptophilus sp. CSR102
+Artemisia absinthium
+Hordeum bogdanii
+Secale cereale subsp. vavilovii
+Notechis scutatus
+Sinosenecio hederifolius
+Hordeum brachyantherum
+Eleocharis palustris var. vigens
+Lobelia siphilitica
+Tapeinochilos ananassae
+Corvus brachyrhynchos
+Hyposmocoma kahamanoa
+Pagrus major
+Polistes dominula
+Arhopala eumolphus
+Deschampsia cespitosa
+Knautia midzorensis
+Pinus densiflora
+Cannabis sativa
+Monsonia emarginata
+Sellaphora pupula
+Drosophila busckii
+Pratylenchus thornei
+Festuca gautieri
+Fritillaria imperialis
+Trifolium pratense
+Poecilia formosa
+Iris fulva
+Saccostrea kegaki
+Arundo donax
+Triticum spelta
+Hydrangea macrophylla
+Avena barbata
+Knautia arvensis;Knautia macedonica
+Notamacropus eugenii
+Plantago lagopus
+Dianthus gratianopolitanus
+Paspalum ionanthum
+Rehia nervata
+Glycine soja
+Cucumis sativus
+Hordeum marinum subsp. gussoneanum
+Oncorhynchus kisutch
+Pinus radiata
+Latimeria chalumnae
+Erycina pusilla
+Bromus inermis
+Phragmites australis
+Crataraea suturalis
+Xenojulis margaritaceus
+Caragana korshinskii
+Chironomus tentans
+Zingeria kochii
+Fundulus heteroclitus
+Tarenaya hassleriana
+Cicuta virosa
+Gloiocladia australis
+Pseudoroegneria strigosa
+Nasonia vitripennis
+Scolochloa festucacea
+Meloidogyne hapla
+Gallasellus heilyi
+Leucobryum glaucum
+Hordeum vulgare
+Ephydatia muelleri
+Phryganea sp. CD-2006
+Medicago falcata;Medicago sativa subsp. caerulea
+Anthoxanthum madagascariense
+Hylocereus undatus
+Geranium incanum
+Leymus chinensis
+Rumex acetosella
+Germainia capitata
+Capsaspora owczarzaki ATCC 30864
+Mus musculus
+Cirsium eriophorum
+Campanula rotundifolia
+Cottoperca gobio
+Helictotrichon convolutum
+Bombus impatiens
+Origanum vulgare subsp. vulgare
+Hinterhubera ericoides
+Agrostis transcaspica
+Triticum monococcum subsp. aegilopoides
+Vollenhovia emeryi
+Mustela putorius furo
+Coffea eugenioides
+Utricularia reniformis
+Saussurea medusa
+Agrilus planipennis
+Acacia woodmaniorum
+Bromus sterilis
+Solenopsis invicta
+Avenula pubescens
+Morus notabilis
+Brassica oleracea
+Stipa magnifica
+Daucus carota
+Nassella viridula
+Diplostephium hartwegii
+Arachis duranensis
+Poa pratensis subsp. angustifolia
+Prangos lipskyi
+Cecidomyiidae sp. BOLD:AAH3716
+Gossypium hirsutum
+Pyropia kanakaensis
+Hordeum vulgare;Hordeum vulgare subsp. vulgare
+Pseudochlorella pringsheimii
+Platynereis dumerilii
+Hordeum murinum
+Corchorus capsularis
+Froesiochloa boutelouoides
+Stipa pennata
+Zoysia japonica
+Aegilops tauschii subsp. strangulata
+Dipelta floribunda
+Ctenoplectra albolimbata
+Ricotia carnosula
+Frangula alnus subsp. alnus
+Trifolium pallescens
+Onyxacalles bermejaensis
+Leymus racemosus
+Lecomtella madagascariensis
+Achillea acuminata
+Dendrocalamus latiflorus
+Austrochloritis nambucca
+Bemisia tabaci
+Chondria sp. (in: Rhodophyta)
+Bambusa multiplex
+Phelipanche tunetana
+Myotis brandtii
+Gastrocopta ashmuni minor
+Argas striatus
+Crocus sativus
+Citrus limetta
+Lathyrus pratensis
+Dioon tomasellii
+Pleurobranchaea maculata
+Chusquea rigida
+Phaenosperma globosum
+Alloeochaete oreogena
+Monomorium pharaonis
+Actaea racemosa
+Thaumatella adunca
+Poa sibirica
+Exostigma notobellidiastrum
+Pseudomyrmex gracilis
+Cerastium subtriflorum
+Couepia guianensis
+Australopyrum velutinum
+Eschenbachia blinii
+Musa balbisiana
+Rapana venosa
+Trifolium nigrescens subsp. petrisavii
+Gossypium exiguum
+Stachyamoeba lipophora
+Callithrix jacchus
+Thaumatococcus daniellii
+Pseudoroegneria spicata
+Solanum lycopersicum
+Avena strigosa
+Mus caroli
+Heterometrus spinifer
+Esox lucius
+Nitella hyalina
+Arachis stenosperma
+Lolium perenne
+Pangasianodon hypophthalmus
+Plantago patagonica
+Cynomorium coccineum
+Oxalis laxa
+Aegilops ventricosa
+Triticum turgidum subsp. durum
+Poritia erycinoides
+Glycine max
+Vicia faba
+Anthoxanthum sp. Forest 861
+Panicum miliaceum
+Odobenus rosmarus divergens
+Hordeum vulgare subsp. vulgare
+Salvia miltiorrhiza
+Pityopus californicus
+Drosophila arizonae
+Pelochares sp. INB042
+Puccinellia tenuiflora
+Ptychomnion cygnisetum
+Cyphomyrmex costatus
+Ficus carica
+Papaver somniferum
+Cypripedium formosanum
+Stegastes partitus
+Miniopterus natalensis
+Teramnus labialis
+Poa paucispicula
+Averrhoa carambola
+Medicago rigidula
+Chrysanthemum x morifolium
+Cleistogenes songorica
+Digitalis lanata
+Excirolana hirsuticauda
+Pogonomyrmex barbatus
+Spodoptera frugiperda
+Beta vulgaris subsp. maritima
+Gentiana stipitata
+Arabidopsis cebennensis
+Homalothecium fulgescens
+Elymus tsukushiensis
+Leymus angustus
+Chrysanthemum indicum
+Nassella trichotoma
+Gymnophrys sp. ATCC 50923
+Carthamus turkestanicus
+Arabidopsis halleri subsp. halleri
+Oxytricha trifallax
+Nannophya pygmaea
+Dinoponera quadriceps
+Alloeochaete uluguruensis
+Paracryphia alticola
+Rhopalosiphum maidis
+Bryopsis hypnoides
+Knautia macedonica
+Monodelphis domestica
+Croomia japonica
+Manis javanica
+Taeniatherum caput-medusae
+Leucanthemum vulgare subsp. pujiulae
+Aegilops bicornis
+Aporrectodea icterica
+Alligator sinensis
+Gentiana officinalis
+Bromus catharticus
+Miscophus bicolor
+Plocamium cartilagineum
+Rimicaris exoculata
+Diaphorina citri
+Carassius auratus
+Holcus lanatus
+Nyssa sinensis
+Pyrenaria pingpienensis
+Ankistrodesmus falcatus
+Elymus stipifolius
+Plutella xylostella
+Oryza meridionalis
+Silene diclinis
+Lytechinus variegatus
+Elettaria cardamomum
+Heterothalamus alienus
+Lactuca dolichophylla
+Coccomyxa subellipsoidea C-169
+Eutrema halophilum
+Bathycoccus prasinos
+Secale cereale x Triticum turgidum subsp. durum
+Cimex lectularius
+Geum rupestre
+Gastrodia elata
+uncultured Glomus
+Ictalurus punctatus
+Saussurea involucrata
+Franklandia triaristata
+Drosophila bipectinata
+Diospyros lotus
+Thinopyrum bessarabicum
+Ctenocephalides felis
+Cucurbita pepo
+Juglans regia
+Holcus mollis
+Meleagris gallopavo
+Cebus capucinus imitator
+Geranium maderense
+Orycteropus afer afer
+Agrostis gigantea
+Sinocyclocheilus grahami
+Amblyopyrum muticum
+Vancouveria planipetala
+Avena insularis
+Hordeum brachyantherum subsp. californicum
+Lutzomyia verrucarum
+Viscum crassulae
+Lobochlamys culleus
+Ceratina calcarata
+Coffea canephora
+Artemisia cana subsp. cana
+Lepturacanthus savala
+Phascolarctos cinereus
+Elymus tauri
+Prunus persica
+Centaurea cyanus
+Parinari campestris
+Gossypium trilobum
+Quercus robur
+Malania oleifera
+Aristida ternipes
+Lonicera dasystyla
+Schistosoma japonicum
+Wurmbea kraussii
+Orobanche densiflora
+Ranunculus cacuminis
+Microplitis demolitor
+Ainsliaea fragrans var. integrifolia
+Ranunculus keniensis
+Lathyrus japonicus
+Nymphaea hybrid cultivar
+Leymus coreanus
+Nardus stricta
+Macropicola ocydromi
+Pulsatilla albana
+Eschweilera caudiculata
+Olea europaea subsp. laperrinei
+Silene davidii
+Clarireedia homoeocarpa
+Haliplus sp. BMNH 1425121
+Haliotis tuberculata tuberculata
+Hylocereus polyrhizus
+Actinote surima
+Trichinella spiralis
+Tanacetum walteri
+Anopheles gambiae
+Schrebera arborea
+Aegilops cylindrica
+Bactrocera oleae
+Dipterocladia arabiensis
+Leymus multicaulis
+Chiliadenus lopadusanus
+Petunia integrifolia subsp. inflata
+Populus euphratica
+Ranunculus occidentalis
+Parus major
+Phyllostachys propinqua
+Orussus abietinus
+Catharanthus roseus
+Larimichthys crocea
+Solenopsis bivonae
+Pediculus humanus corporis
+Piliocolobus tephrosceles
+Osmundastrum cinnamomeum
+Poa pratensis
+Chlamydomonas reinhardtii
+Alopecurus myosuroides
+Coccomyxa subellipsoidea
+Callorhinus ursinus
+Saccharum hybrid cultivar SP80-87432
+Chasmanthium laxum
+Plantago lanceolata
+Parrotia subaequalis
+Asclepias syriaca
+Matricaria matricarioides
+Plantago maritima
+Echinacanthus longzhouensis
+Exaiptasia pallida
+Eremopyrum distans
+Oxytropis maydelliana
+Dunnia sinensis
+Neobartsia pedicularoides
+Eulaliopsis binata
+Batis maritima
+Misopates orontium
+Entamoeba dispar SAW760
+Dipsacus laciniatus
+Nyholmiella obtusifolia
+Boechera stricta
+Drosophila grimshawi
+Leymus cinereus x Leymus triticoides
+Theileria orientalis strain Shintoku
+Gossypium herbaceum
+Hyoscyamus niger
+Pelargonium quinquelobatum
+Hordeum pubiflorum
+Matricaria chamomilla var. recutita
+Dipsacus japonicus
+Saxifraga acerifolia
+Silene wilfordii
+Ledebouriella seseloides
+Gentiana lutea
+Aletris fauriei
+Vespa orientalis
+Lupinus atlanticus
+Cercocebus atys
+Amynthas sp. 3 LZ-2016
+Dinocampus coccinellae
+Procambarus acutus
+Lates calcarifer
+Triticum monococcum
+Cyprinodon variegatus
+Brachythecium rutabulum
+Paspalum atratum
+Aegilops comosa
+Vigna angularis var. angularis
+Hedwigia ciliata
+Oryza eichingeri
+Deschampsia antarctica
+Claytonia virginica
+Erigeron bellidiastrum
+Hippophae rhamnoides
+Oryza brachyantha
+Aedes albopictus
+Pleioblastus fortunei
+Anthoxanthum aristatum
+Drosophila ananassae
+Chlorella variabilis
+Aptostichus hedinorum
+Ipomoea trifida
+Salix purpurea
+Vicia narbonensis
+Begonia strigillosa
+Meloidogyne enterolobii
+Triodia stipoides
+Leucaena trichandra
+Erodium texanum
+Anthoxanthum hirtum
+Capsella rubella
+Drosophila mojavensis
+Silene noctiflora
+Trifolium meduseum
+Oryza meyeriana
+Pomacea canaliculata
+Hordeum murinum subsp. murinum
+Anadenanthera colubrina var. cebil
+Copidosoma floridanum
+Vitis vinifera
+Caenorhabditis sp. 34 TK-2017
+Cucurbita maxima
+Poa ursina
+Wisteria floribunda
+Amaranthus palmeri
+Streptocarpus teitensis
+Cerastium dichotomum subsp. inflatum
+Sorghum bicolor
+Egretta eulophotes
+Chelonia mydas
+Drosophila ficusphila
+Hydrangea serrata
+Vicia hirsuta
+Stilpnolepis centiflora
+Eutrema salsugineum
+Festuca ovina
+Thinopyrum ponticum
+Lupinus albus
+uncultured Pseudocohnilembus sp.
+Nicotiana attenuata
+Mycalesis mineus
+Stipagrostis uniplumis var. uniplumis
+Mitosporidium daphniae
+Actinidia deliciosa
+Crocodylus porosus
+Chondrostega vandalicia
+Astragalus membranaceus var. membranaceus
+Anacyclus valentinus
+Vicia villosa
+Syringa vulgaris
+Antirrhinum majus
+Silene latifolia
+Ziziphus jujuba
+Vahlodea atropurpurea
+Poa diaphora var. songarica
+Stephanomeria cichoriacea
+Vachellia flava
+Nicotiana tomentosiformis
+Danio rerio
+Phonus rhiphaeus
+Avena vaviloviana
+Lonicera caerulea
+Stichococcus bacillaris
+Orobanche austrohispanica
+Microcebus murinus
+Brachypodium sylvaticum
+Euglena archaeoplastidiata
+Astyanax mexicanus
+Alstonia scholaris
+Campanula scouleri
+Eucodonia andrieuxii
+Veronica persica
+Cinna latifolia
+embryophyte environmental sample
+Bombax ceiba
+Drosera regia
+Oryza meyeriana var. granulata
+Desmodesmus pannonicus
+Hyparrhenia papillipes
+Pinus taeda
+Psacothea hilaris
+Drosophila obscura
+Stomoxys calcitrans
+Styphnolobium japonicum
+Acanthisitta chloris
+Porterella carnosula
+Acropora digitifera
+Asparagus officinalis
+Pediastrum duplex
+Phyllostachys edulis
+Poa pseudobulbosa
+Aname sp. MYG271
+Dipteryx panamensis
+Drosophila yakuba
+Dicrocoelium dendriticum
+Isachne albens
+Hordeum brevisubulatum
+Debregeasia saeneb
+Tetrahymena thermophila SB210
+Zea diploperennis
+Gerbera hybrid cultivar
+Zizaniopsis villanensis
+Anolis carolinensis
+Marshallia obovata
+Oryza officinalis
+Drosophila biarmipes
+Trypanosoma brucei gambiense DAL972
+Capelio caledonica
+Atractylodes chinensis
+Hypophthalmichthys nobilis
+Poa stenantha
+Dasypyrum villosum
+Ascaris lumbricoides
+Littledalea przevalskyi
+uncultured fungus
+Aconitum barbatum var. puberulum
+Juncus compressus
+Fraxinus chiisanensis
+Rhabditophanes sp. KR3021
+Hordeum murinum subsp. leporinum
+Oxyria sinensis
+Aphyllon epigalium subsp. epigalium
+Portulaca oleracea
+Lespedeza capitata
+Taeniatherum caput-medusae subsp. caput-medusae
+Cicer arietinum
+Odontadenia perrottetii
+Schismus arabicus
+Oryza sativa f. spontanea
+Enhydra lutris kenyoni
+Stevia rebaudiana
+Panicum virgatum
+Leptophyllochloa micrathera
+Blakiella bartsiifolia
+Paeonia suffruticosa
+Tragus andicola
+Canis lupus familiaris
+Selasphorus rufus
+Beta vulgaris subsp. vulgaris
+Dendroctonus ponderosae
+Acer palmatum
+Stenamma muralla
+Aegilops juvenalis
+Secale cereale x Triticum aestivum
+Fritillaria agrestis
+Triplostegia glandulifera
+Triticum dicoccoides
+Acmispon strigosus
+Musca domestica
+Tetradesmus obliquus
+Taenioma perpusillum
+Chrysochloris asiatica
+Sarbia xanthippe
+Paulownia tomentosa
+Coffea arabica
+Centaurea podospermifolia
+Microsepsis sp. ACMJ-2016
+Diplostephium schultzii
+Oplismenus hirtellus
+Tetraponera aethiops
+Aegilops triuncialis
+Plantago argentea
+Thrasymedes pallescens
+Lathyrus pubescens
+Campsomeris plumipes fossulana
+Epirinus ngomae
+Pisum sativum subsp. sativum
+Culicoides sonorensis
+Acanthaster planci
+[Nectria] haematococca
+Poa ligularis
+Thuretia quercifolia
+Taraxacum obtusifrons
+Poecilia parae
+Dalbulus quinquenotatus
+Chrysanthemum boreale
+Lacmellea panamensis
+Asarum splendens
+Rhagoletis zephyria
+Zea mays subsp. mays
+Populus nigra
+Avena longiglumis
+Carthamus tinctorius
+Euonymus carnosus
+Arhopala ace
+Pyrenacantha acuminata
+Hordeum lechleri
+Leersia tisserantii
+Bactrocera dorsalis
+Saccharum officinarum
+Populus tremuloides
+Spinacia oleracea
+Drosophila suzukii
+Erythranthe lewisii
+Rumex nepalensis
+Agrostis stolonifera
+Rattus norvegicus
+Picea glauca
+Eragrostis tef
+Cocos nucifera
+Cryptosporidium muris RN66
+Arundinaria tecta
+Aporrectodea caliginosa
+Rhincodon typus
+Tribolium castaneum
+Dalbulus elimatus
+Nematostella vectensis
+Pluchea indica
+Centaurea diffusa
+Orobanche rapum-genistae
+Oikopleura dioica
+Haberlea rhodopensis
+Branchiostoma belcheri
+Hordeum patagonicum subsp. setifolium
+Capitonius sp. QL-2013
+Oryza longistaminata
+Erotylidae sp. BMNH 1274780
+Apis mellifera
+Theobroma cacao
+Leptinotarsa decemlineata
+Dasypyrum hordeaceum
+Labrus bergylta
+Quercus suber
+Morus alba
+Seriola lalandi dorsalis
+Paspalum minus
+Veronica nakaiana
+Drosophila simulans
+Cleomella longipes
+Callorhinchus milii
+Sorex araneus
+Strongylus vulgaris
+Herzogiella striatella
+Atriplex halimus
+Stephanomeria virgata subsp. pleurocarpa
+Fragaria vesca subsp. vesca
+Trifolium campestre
+Fragaria mandshurica
+Raphanus sativus
+Artemisia argyi
+Veronicastrum sibiricum
+Avena fatua
+Ixodes auritulus
+Euglena gracilis
+Oncorhynchus mykiss
+Poa pratensis subsp. pratensis
+Panicum capillare
+Aedes aegypti
+Anabas testudineus
+Stipagrostis plumosa
+Drosophila pseudoobscura pseudoobscura
+Eurytemora affinis
+Cichorium intybus
+Takifugu rubripes
+Brachypodium distachyon
+Plantago rugelii
+Aporrectodea rosea
+Rumex acetosa
+Crassostrea gigas
+Gossia floribunda
+Haemonchus contortus
+Folsomia candida
+Lepilemur leucopus
+Tetrahymena thermophila
+Sepia officinalis
+Medicago truncatula
+Ichneutes sp. QL-2013
+Ciona intestinalis
+Angiostrongylus cantonensis
+Erinaceus europaeus
+Prunus avium
+Athene cunicularia
+Danthoniastrum compactum
+Prunus salicina
+Plantago virginica
+Austrofundulus limnaeus
+Poecilia mexicana
+Dunaliella viridis
+Litinga mimica
+Desmodus rotundus
+Triticum turgidum
+Merostachys sp. Greco 18
+Elymus repens
+Brassica oleracea var. oleracea
+Drosophila kikkawai
+Pityopsis falcata
+Amphioctopus marginatus
+Tanacetum turcomanicum
+Chlorocebus sabaeus
+Medicago falcata
+Poa speluncarum
+Stipa bungeana
+Brassica rapa subsp. pekinensis
+Haemadipsa japonica
+Guillardia theta
+Tasgius compressus
+Vigna mungo
+Puccinellia nuttalliana
+Jaculus jaculus
+Tremex columba
+Illicium henryi
+Vicia sativa subsp. sativa
+Panthera tigris altaica
+Cucumis melo
+Acanthamoeba castellanii str. Neff
+Salpingoeca rosetta
+Melinis minutiflora
+Stratiotes aloides
+Aethina tumida
+Ricinus communis
+Sesuvium portulacastrum
+Rumex suffruticosus
+Aegilops vavilovii
+Triticum timopheevii
+Oryza minuta
+Beckmannia syzigachne
+Chlorocebus aethiops
+Equus przewalskii
+Allium nutans
+Secale cereale
+Heterocephalus glaber
+Tripsacum dactyloides
+Paspalum vaginatum
+Taraxacum kok-saghyz
+Crocus vernus
+Ranunculus japonicus
+Veronica alaskensis
+Secale strictum subsp. strictum
+Xanthosoma sagittifolium
+Trichomonas vaginalis G3
+Eimeria acervulina
+Trypanosoma brucei brucei
+Caltha leptosepala var. biflora
+Durio zibethinus
+Carthamus lanatus
+Lethenteron camtschaticum
+Eimeria necatrix
+Viburnum japonicum
+Brachypodium hybridum
+Guillardia theta CCMP2712
+Trachytes sp. KD-2005
+Closterium baillyanum
+Orobanche cernua var. cumana
+Picea sitchensis
+Microtus ochrogaster
+Psathyrostachys huashanica
+Pseudostellaria longipedicellata
+Nothobranchius furzeri
+Andropogon gayanus
+Lingula anatina
+Arenaria katoana
+Hordeum pusillum
+Echinacea sanguinea
+Aquila chrysaetos canadensis
+Solanum tuberosum
+Cephus cinctus
+Tagetes patula
+Sorghum propinquum
+Channa striata
+Amaranthus caudatus
+Syntrichia ruralis
+Myotis davidii
+Equus asinus
+Kryptonesticus deelemanae
+Priapulus caudatus
+Triticum urartu
+Echinococcus granulosus sensu lato genotype G6
+Alopecurus textilis
+Oryza rhizomatis
+Helictochloa hookeri
+Aira caryophyllea
+Volvox carteri
+Solanum demissum
+Camelus ferus
+Bencomia exstipulata
+uncultured Glomerales
+Pocillopora damicornis
+Calidris pugnax
+Arabidopsis arenosa
+Zeacumantus lutulentus
+Electrophorus electricus
+Sabatia campestris
+Atropa baetica
+Lotus pedunculatus
+Drosophila elegans
+Corvus cornix cornix
+Acanthorhodeus chankaensis
+Festuca valesiaca
+Phleum subulatum
+Carollia perspicillata
+Mizuhopecten yessoensis
+Taraxacum sp. RHS-2016
+Lottia gigantea
+Cynara cardunculus var. scolymus
+Alania cunninghamii
+Frankliniella occidentalis
+Plantago cafra
+Cryptomonas paramecium
+Galax urceolata
+Gallus gallus
+Papilio machaon
+Nilaparvata lugens
+Plectranthus scutellarioides
+Festuca rubra
+Avena sativa
+Populus trichocarpa
+Avena sterilis
+Avena clauda
+Acanthochromis polyacanthus
+Lens culinaris
+Momordica charantia
+Pilosella rhodopea
+Amyelois transitella
+Lancea tibetica
+Tarenaya spinosa
+Halyomorpha halys
+Tanacetum vulgare
+Triticum aestivum x Aegilops sharonensis
+Acyrthosiphon pisum
+Oryza barthii
+Codonopsis lanceolata
+Vanessa tameamea
+Odocoileus virginianus texanus
+Senecio scandens var. incisus
+Valeriana officinalis
+Boerhavia sp. BC-2016
+Arthropteris palisotii
+Tarsipes rostratus
+Colpodium versicolor
+Bos mutus
+Cyperus rotundus
+Hookerochloa hookeriana
+uncultured Glomeromycotina
+Haliotis discus discus
+Pantholops hodgsonii
+Eimeria maxima
+Plantago ovata
+Centruroides sculpturatus
+Cryptosporidium parvum Iowa II
+Mesocricetus auratus
+Leptopilina heterotoma
+Eufriesea mexicana
+Calypte anna
+Drosophila willistoni
+Tiquilia plicata
+Leishmania donovani
+Salmo salar
+Clematis loureiroana
+Echinops telfairi
+Antirrhinum hispanicum
+Mylocheilus caurinus
+Trifolium boissieri
+Geospiza fortis
+Coccophora langsdorfii
+Billardiera heterophylla
+Cryptosporidium hominis TU502
+Dohrniphora sp. Thai 1
+Urocitellus parryii
+Psathyrostachys fragilis
+Aegilops crassa
+Physeter catodon
+Artemisia ordosica
+Tetraodon nigroviridis
+Diabrotica virgifera virgifera
+Apis florea
+Abolboda macrostachya
+Eurydema gebleri
+Micraira sp. JLC-2014
+Helictotrichon parlatorei
+Artemisia annua
+Caenorhabditis brenneri
+Parambassis ranga
+Thinopyrum elongatum
+Chrysemys picta bellii
+Camellia sinensis
+Lissorhoptrus oryzophilus
+Astatotilapia calliptera
+Strongyloides papillosus
+Falco cherrug
+Triticum timopheevii subsp. timopheevii
+Sidalcea hartwegii
+Boechera divaricarpa
+Cerastium fischerianum
+Gonium pectorale
+uncultured Mucoromycotina
+Drosophila miranda
+Nicotiana sylvestris
+Saccharum hybrid cultivar Q117
+Schwalbea americana
+Papilio xuthus
+Cerastium sp. ASM-2014
+Plantago media
+Bubalus bubalis
+Gouania willdenowi
+Corallorhiza striata var. vreelandii
+Hordeum euclaston
+Festuca plebeia
+Vigna radiata var. radiata
+Parapholis incurva
+Thysanoessa raschii
+Trisetaria linearis
+Ceratitis capitata
+Gastridium ventricosum
+Euplotes aediculatus
+Aegilops speltoides
+Lotus japonicus
+Loxandrus rufilabris
+Miliammina fusca
+Alectryon excelsus subsp. grandis
+Sus scrofa
+Bombyx mori
+Ostrinia nubilalis
+Racopilum cuspidigerum
+Aleocharinae gen. sp. 1 ZMUN 10029193
+Helictotrichon filifolium subsp. arundanum
+Sophora flavescens
+Monosiga brevicollis MX1
+Heteranthelium piliferum
+Stylosanthes viscosa
+Volvox carteri f. nagariensis
+Oryza ridleyi
+Toxoplasma gondii VEG
+Cenchrus americanus x Cenchrus squamulatus
+Avena atlantica
+Fargesia spathacea
+Hordeum murinum subsp. glaucum
+Sambucus williamsii
+Corylopsis coreana
+Ipomoea batatas
+Greslania sp. McPherson 19217
+Leymus secalinus
+Sartidia isaloensis
+Globodera pallida
+Curculionidae sp. BMNH 1274272
+Lomelosia brachiata
+Meriones unguiculatus
+Anemopaegma oligoneuron
+Phleum pratense
+Daucus carota subsp. sativus
+Ranunculus carpaticola
+Taeniopygia guttata
+Loa loa
+Oryza sativa Indica Group
+Secale strictum subsp. africanum
+Kengyilia batalinii
+Arachis hypogaea;Arachis ipaensis
+Dioscorea rotundata
+Peromyscus maniculatus bairdii
+Alopecurus gerardii
+Zea luxurians
+Micromonas commoda
+Dysdercus cingulatus
+Fargesia qinlingensis
+Ostreococcus tauri
+Bombus terrestris
+Sinopodophyllum hexandrum
+Scolytinae sp. BMNH 1043104
+Hottentotta judaicus
+Boleophthalmus pectinirostris
+Balaenoptera acutorostrata scammoni
+Dendrocalamus sinicus
+Mischocyttarus flavitarsis
+Cirsium purpuratum
+Pogona vitticeps
+Botryllus schlosseri
+Humulus scandens
+uncultured Eimeriidae
+Silene vulgaris subsp. prostrata
+Barbula unguiculata
+Zea perennis
+Gaiadendron sp. Munoz et al. 102
+Rhynchoryza subulata
+Neofelis nebulosa
+Erthesina fullo
+Phalaris arundinacea
+Drosophila navojoa
+Caenorhabditis elegans
+Poa pratensis subsp. colpodea
+Babesia microti strain RI
+Urochloa ruziziensis
+Alloteropsis paniculata
+Apteryx australis mantelli
+Mus musculus molossinus
+Chlorosarcina brevispinosa
+Excoecaria cochinchinensis
+Vicia pannonica
+Bothriochloa decipiens
+Conyza bonariensis
+Dahlia pinnata
+Monotropa uniflora
+Stellaria longipes
+Haematobia irritans
+Penaeus vannamei
+Aegilops tauschii subsp. tauschii
+Colius striatus
+Phyllostachys aurea
+Macropharynx peltata
+Lumbricidae sp. BIOUG32102-E10
+Sesleria ovata
+Eremopyrum triticeum
+Alocasia longiloba
+Bicyclus anynana
+uncultured Uthatobasidium
+Derocephalus angusticollis
+Chionanthus rupicola
+Azumapecten farreri
+Alligator mississippiensis
+Drosophila hydei
+Apis cerana
+Anthoxanthum odoratum
+Micromonas pusilla CCMP1545
+Festuca pratensis
+Conocarpus lancifolius
+Helianthus deserticola
+Rhinotia sp. CSR067
+Cirsium acaule
+Panicum incomtum
+Bradysia aprica
+Vicia serratifolia
+Amplirhagada sp. 'South Bongaree'
+Lolium temulentum
+Silene uniflora
+Ananas comosus
+Olea europaea
+Helictotrichon sp. Hodkinson B16
+Eucryphia lucida
+Camellia sinensis var. assamica
+Leymus mollis
+Heliosperma tommasinii
+Trailliaedoxa gracilis
+Colobanthus quitensis
+Lagerstroemia indica
+Lolium persicum
+Tragopogon pratensis
+Lamarckia aurea
+Nicotiana rustica
+Inocellia crassicornis
+Leymus ramosus
+Cyprinus carpio
+Pinus bungeana
+Artemia franciscana
+Helobdella robusta
+Pan paniscus
+Cornus volkensii
+Lactuca sativa
+Cryptomeria japonica
+Paramecium tetraurelia strain d4-2
+Fritillaria camschatcensis
+Oryza glaberrima
+Nebria gebleri
+Corynaea crassa
+Sonchus asper
+Sarcophilus harrisii
+Atelerix albiventris
+Brahea brandegeei
+Aster indicus
+Zostera marina
+Delphinapterus leucas
+Poa wolfii
+Viburnum dentatum
+Paraurostyla weissei
+Fragaria x ananassa
+Eimeria mitis
+Aquilegia coerulea
+Ananas comosus var. bracteatus
+Leymus arenarius
+Oocyclus sp. INB014
+Trifolium occidentale
+Lygus hesperus
+Geranium traversii
+Hordeum bulbosum
+Camponotus japonicus
+Betula pendula
+Lonchura striata domestica
+Aeginetia indica
+Poa masenderana
+Henrardia persica
+Kalopanax septemlobus
+Neodiprion lecontei
+Dalbergia nigra
+Drosophila erecta
+Polistes canadensis
+Oryza punctata
+Ipomoea nil
+Eragrostis walteri
+Struthio camelus australis
+Lumbriculus sp. EEZ-2018
+Stenamma impar
+Aulacorthum ibotum
+Artemisia fukudo
+Poa iberica
+Ranunculus austro-oreganus
+Prunus mume
+Littledalea racemosa
+Campanula piperi
+Eleocharis xyridiformis
+Melica subulata
+Anser cygnoides domesticus
+Reichenbachia hirsuta
+Vicia sativa subsp. nigra
+Schizachyrium cirratum
+Oncorhynchus nerka
+[Candida] haemulonis
+Forcipomyia aristolochiae
+Trichananca sp. CSR064
+Oryza coarctata
+Viburnum punctatum
+Trifolium isthmocarpum
+Daphnephila sp. SYY-2001-10
+Seriola dumerili
+Festuca arundinacea
+Rhaponticum uniflorum
+Paramormyrops kingsleyae
+Citrus medica
+Canavalia lineata
+Lithocarpus taitoensis
+Epinephelus ongus
+Neomonachus schauinslandi
+Taraxacum mongolicum
+Benincasa hispida
+Fragaria orientalis
+Rousettus aegyptiacus
+Arachis hypogaea;Arachis duranensis
+Agrostis capillaris
+Sideroxylon tepicense
+Clavigralla tomentosicollis
+Phaseolus coccineus
+Polypterus senegalus
+Silene sorensenis
+Euastacus yarraensis
+Drosophila buzzatii
+Phaenanthoecium koestlinii
+Elephantulus edwardii
+Panax japonicus var. bipinnatifidus
+Sapajus apella
+Ranalisma humile
+Helianthus anomalus
+Diplostephium hippophae
+Leptomona erythrocephala
+Ajuga reptans
+Pohlia nutans
+Pratylenchus penetrans
+Ichthyophthirius multifiliis
+Trypanosoma brucei
+Biomphalaria glabrata
+Mandrillus leucophaeus
+Eisenia nordenskioldi pallida
+Saccharum hybrid cultivar SP80-3280
+Neospora caninum Liverpool
+Scophthalmus maximus
+Flaveria bidentis
+Lauratonema sp. Ugent CeMoFe61X23B15
+Annona cherimola
+Ochotona princeps
+Scirtes orbicularis
+Ligularia jaluensis
+Dicentrarchus labrax
+Papilio maraho
+Lucilia cuprina
+Symbiodinium kawagutii
+Achillea santolina
+Centaurea cyanoides
+Sisymbrium irio
+Aphalara sp. DPQC131Aph08
+Torreyochloa pallida
+Betta splendens
+Sporobolus virginicus
+Hordeum chilense
+Exotheca abyssinica
+Protobothrops mucrosquamatus
+Apolygus lucorum
+Lophophytum mirabile subsp. bolivianum
+Abrus precatorius
+Papilio polytes
+Musa ornata
+Ornithodoros costalis
+Sturnus vulgaris
+Aegilops markgrafii
+Drosophila virilis
+Coelachne africana
+Mastacembelus armatus
+Ovis canadensis canadensis
+Astrolonche serrata
+Pleuronichthys cornutus
+[Candida] glabrata
+Poa billardierei
+Acanthamoeba castellanii
+Ampulex compressa
+Tanacetum cinerariifolium
+Trifolium alexandrinum
+Anoplopoma fimbria
+Clupea harengus
+Tolypiocladia glomerulata
+Centaurea scabiosa
+Zingeria biebersteiniana subsp. trichopoda
+Zea mays
+Artemisia gmelinii
+Hypochaeris elata
+Hypseocharis bilobata
+Ranunculus bulbosus
+Metaperipatus inae
+Athalia rosae
+Anopheles pseudotibiamaculatus
+Alopecurus arundinaceus
+Stenamma megamanni
+Hordeum muticum
+Musa acuminata subsp. malaccensis
+Trifolium grandiflorum
+Hordeum marinum
+Elymus trachycaulus
+Lumbricus terrestris
+Apis dorsata
+Eurypyga helias
+Pyrus x bretschneideri
+Eucalyptus grandis
+Dichotomosiphon tuberosus
+Trypanosoma congolense IL3000
+Trifolium subterraneum
+Triodanis perfoliata
+Santalum album
+Abelia x grandiflora
+Egretta garzetta
+Citrus clementina
+Achillea millefolium
+Carthamus oxyacanthus
+Monopterus albus
+Nicotiana tabacum
+Onthophagus taurus
+Lonicera vesicaria
+Coix lacryma-jobi
+Hyalella azteca
+Atomaria fuscata
+Ipomoea triloba
+Drosophila rhopaloa
+uncultured soil eukaryote
+Anaphalis sinica
+Oryza sativa
+Akalaphycus liagoroides
+Ornithorhynchus anatinus
+Hippocampus comes
+Rheum wittrockii
+Herona marathus
+Corchorus olitorius
+Lepisosteus oculatus
+Symphalangus syndactylus
+Saccharum spontaneum
+Malus hupehensis var. mengshanensis
+Brachypodium pinnatum
+Butomus umbellatus
+Leishmania mexicana MHOM/GT/2001/U1103
+Barnardia japonica
+Cupido argiades
+Chaetophoropsis polyrhiza
+Poa nemoralis
+Bouteloua curtipendula
+Lathrobium brunnipes
+Elymus repens subsp. elongatiformis
+Schiedea jacobii
+Prunus armeniaca
+Tinamus guttatus
+Elymus athericus
+Cerastium furcatum
+Sinocyclocheilus rhinocerous
+Stylophora pistillata
+Tetranychus urticae
+Eimeria tenella
+Tragopogon dubius
+Isurus paucus
+Linepithema humile
+Drosophila mauritiana
+Pseudoroegneria strigosa subsp. aegilopoides
+Puccinellia maritima
+Encalypta rhaptocarpa
+Zingeria biebersteiniana
+Eucallipterus tiliae
+Tibetia liangshanensis
+Poecilia vivipara
+Plantago major
+Viviania marifolia
+Malesherbia linearifolia
+Notothenia coriiceps
+Conocephalus emeiensis
+Ranunculus reptans
+Dendrobium catenatum
+Serinus canaria
+Peridictyon sanctum
+Entamoeba histolytica HM-1:IMSS
+Hyparrhenia anemopaegma
+Echinocodon lobophyllus
+Hordeum flexuosum
+Piptatherum songaricum
+Chinchilla lanigera
+Amphiprion ocellaris
+Castanea mollissima
+Poa supina
+Leishmania panamensis
+Chamaecyparis hodginsii
+Lupinus elegans
+Aporrectodea sp. MPL-2014
+Trachymyrmex cornetzi
+Taraxacum brevicorniculatum
+Bupleurum boissieuanum
+Dactylis glomerata subsp. hispanica
+Cuscuta obtusiflora
+Punica granatum
+Dipodomys ordii
+Neocystis brevis
+Allium cepa
+Theropithecus gelada
+Arctopoa tibetica
+Festuca sinensis
+Festuca pilgeri
+Lupinus princei
+Triglochin maritima
+Knautia dipsacifolia
+Macrosolen cochinchinensis
+Meloidogyne artiellia
+Chionanthus retusus
+Helicoverpa assulta
+Nicrophorus vespilloides
+Escarpia southwardae
+Secale sylvestre
+Asarum canadense
+Miscanthus sinensis f. glaber
+Aricia eumedon
+Festuca bromoides
+Hopea dryobalanoides
+Panagrolaimus detritophagus
+Rhizophora stylosa
+Carthamus glaucus
+Tupaia chinensis
+Mantispa japonica
+Poa secunda
+Gnetum gnemon
+Trifolium micranthum
+Cardicola currani
+Zaleya pentandra
+Arctium lappa
+Ismelia carinata
+Neophocaena asiaeorientalis asiaeorientalis
+Luzuriaga radicans
+Carthamus tinctorius;Carthamus persicus
+Vicugna pacos
+Hipposideros armiger
+Acinonyx jubatus
+Stellaria media
+Calanthe davidii
+Strongyloides stercoralis
+Dianthus caryophyllus
+Linum usitatissimum
+Nepenthes alata
+Gracilaria ferox
+Panthera pardus
+Melandryidae sp. INB203
+Lagenorhynchus obliquidens
+Hordeum capense
+Alnus maritima
+Nassella hyalina
+Spirometra erinaceieuropaei
+Lumbriculus variegatus
+Phleum alpinum
+Anthoxanthum alpinum
+Gossypium arboreum
+Trachymyrmex zeteki
+Soliva sessilis
+Koeleria pyramidata
+Millettia pinnata
+Gracilaria chilensis
+Emiliania huxleyi CCMP1516
+Reticulitermes lucifugus
+Carex pallescens
+Choromytilus chorus
+Thinopyrum pycnanthum
+Trypanosoma cruzi cruzi
+Lysandra bellargus
+Erythropalum scandens
+Oryza glumipatula
+Ranunculus nodiflorus
+Succisa pratensis
+Arabidopsis lyrata subsp. lyrata
+Coleataenia prionitis
+Dipsacus sativus
+Varroa jacobsoni
+Euphorbia marginata
+Hordeum parodii
+Asclepias pringlei
+Tettigades sarcinatrix
+Strongylocentrotus purpuratus
+Canis lupus dingo
+Stygiella incarcerata
+Nephrolepis cordifolia
+Formica selysi
+Cistanthe longiscapa
+Racomitrium lanuginosum
+Erythranthe guttata
+Patrinia triloba var. takeuchiana
+Solanum pennellii
+Poa trivialis
+Zanthoxylum schinifolium
+Yamagishiella unicocca
+Orthetrum glaucum
+Festuca arundinacea subsp. atlantigena
+Amborella trichopoda
+Macaca nemestrina
+Ferrocalamus rimosivaginus
+Ranunculus muricatus
+Paralichthys olivaceus
+Ottoschulzia rhodoxylon
+Helianthus annuus
+Alhagi sparsifolia
+Leptocylindrus danicus
+[Nectria] haematococca mpVI 77-13-4
+Stewartia pteropetiolata
+Paramecium tetraurelia
+Taraxacum coreanum
+Laodelphax striatella
+Pan troglodytes
+Primula vulgaris
+Pseudopodoces humilis
+Phaethon lepturus
+Poa granitica;Poa psychrophila
+Panicum hallii
+Apostasia odorata
+Phaseolus vulgaris
+Lonicera sp. Qiu 05010
+Chenopodium quinoa
+Thinopyrum intermedium
+Aster altaicus
+Euphorbia esula
+Cyanistes caeruleus
+Cynara cardunculus
+Seison nebaliae
+Pachypodium baronii
+Coptis teeta
+Bupleurum falcatum
+Iodes cirrhosa
+Malus domestica
+Eptatretus burgeri
+Agropyron mongolicum
+Rosa multiflora
+Vicia melanops
+Sporobolus nervosus
+Dendrocerus sp. ZJUH_2016009
+Equus caballus
+Nicotiana plumbaginifolia
+Bos taurus
+Anemone hortensis
+Carabus nankotaizanus
+Octopus bimaculoides
+Vicia americana var. minor
+Picobiliphyte sp. MS584-11
+Jakoba libera
+Anopheles homunculus
+Cynosurus cristatus
+Melostrachia glomerans
+Drosophila sechellia
+Hyalopoa lanatiflora
+Orcinus orca
+Cucurbita moschata
+Plantago pachyphylla
+Propithecus coquereli
+Oryza australiensis
+Caenorhabditis briggsae
+Chimonocalamus longiusculus
+Ursus arctos horribilis
+Tripterygium regelii
+Pongo abelii
+Stellaria sp. Qiu 95015
+Drimys winteri
+Verasper moseri
+Otolemur garnettii
+Clematis environmental sample
+Nomascus leucogenys
+Festuca glaucescens x Lolium multiflorum
+Lathyrus clymenum
+Camellia japonica
+Pariana sp. PFM-2015
+Gredgaria maugeana
+Stephanomeria virgata subsp. virgata
+Diarrhena obovata
+Hibiscus syriacus
+Lolium multiflorum
+Taraxacum officinale
+Zostera noltei
+Orobanche minor
+Spodoptera litura
+Haliaeetus leucocephalus
+Symbiochloris handae
+Orbicella faveolata
+Allolobophora robusta
+Bryothamnion seaforthii
+Coreius guichenoti
+Ambrosia trifida
+Parthenium argentatum
+Populus davidiana
+Terrapene mexicana triunguis
+Macaca fascicularis
+Psathyrostachys juncea
+Marmota marmota marmota
+Brachionus koreanus
+Parastrongyloides trichosuri
+Patellifolia procumbens
+Drosophila serrata
+Caenorhabditis remanei
+Elaeis guineensis
+Simulium angulistylum
+Matricaria chamomilla
+Elymus wawawaiensis
+Phalaenopsis pulcherrima
+Leea guineensis
+Zootermopsis nevadensis
+Eisenia andrei
+Cynoglossus semilaevis
+Phalaenopsis equestris
+Kryptolebias marmoratus
+Hyparrhenia variabilis
+Heuchera parviflora var. saurensis
+Carex parvula
+Spilarctia subcarnea
+Pieris rapae
+Peumus boldus
+Vaucheria litorea
+Lycium barbarum
+Talinum paniculatum
+Elymus repens subsp. repens
+Fukomys damarensis
+Trisetum cernuum
+Atriplex hortensis
+Taraxacum dasypodum
+Littledalea alaica
+Orobanche crenata
+Mesechites trifidus
+Cynanchum wilfordii
+Hordeum patagonicum subsp. santacrucense
+Scleropages formosus
+Meloidogyne incognita
+Brassica napus
+Saccharum hybrid cultivar R570
+Poa arachnifera x Poa pratensis
+Cuculus canorus
+Entamoeba nuttalli P19
+Trimenia moorei
+Eremitis sp. Clark & Zhang 1343
+Trypanosoma vivax Y486
+Kirinia epaminondas
+Radula sp. Holz & Franzaring DB13087
+Triticum monococcum subsp. monococcum
+Elymus varnensis
+Rubus idaeus
+Chusquea circinata
+Pseudonaja textilis
+Ranunculus acris
+Poa arachnifera
+Condylura cristata
+Avena byzantina
+Citrus sinensis
+Mugil cephalus
+Aegilops longissima
+Lonicera sp. Bergthorsson 0301
+Bryodema luctuosum luctuosum
+Populus tomentosa
+Elymus hystrix
+Lasthenia californica
+Hieracium cf. guatemalense KK-2010
+Panax ginseng
+Triticum dicoccon
+Metroxylon warburgii
+Agkistrodon contortrix
+Allolobophora chlorotica
+Manihot esculenta
+Bambusa oldhamii
+Citrus x paradisi
+Rhinolophus sinicus
+Eptesicus fuscus
+Avena eriantha
+Salvia chanryoenica
+Eleusine coracana
+Staphylinidae sp. BMNH 1274697
+Neuwiedia zollingeri var. singapureana
+Helictochloa compressa
+Encephalartos lehmannii
+Shorea maxwelliana
+Galleria mellonella
+Oryza alta
+Vulpes vulpes
+Loxodonta africana
+Ratibida columnifera
+Cerastium lithospermifolium
+Festuca perrieri
+Glypta fumiferanae
+Helicoverpa armigera
+Olea europaea var. sylvestris
+Hamamelis mollis
+Saccoglossus kowalevskii
+Arachis ipaensis
+Cucumis melo var. momordica
+Rhazya stricta
+Lonicera japonica
+Coturnix japonica
+Lepidium montanum
+Harpegnathos saltator
+Trifolium repens
+Galdieria sulphuraria
+Oryzias melastigma
+Crassostrea virginica
+Poa holciformis
+Strongyloides venezuelensis
+Polytoca digitata
+Medicago ruthenica
+Eclipta alba
+Chiloplacus propinquus
+Catapodium rigidum
+Helianthus petiolaris
+Stipa zalesskii
+Ambassis agassizii
+Latimeria menadoensis
+Atractylis humilis
+Myotis lucifugus
+Habropoda laboriosa
+Antrops sp. JK31
+Stipa purpurea
+Flaveria pringlei
+Ranunculus acris;Ranunculus aconitifolius
+Paramunida labis
+Lathyrus sylvestris
+Carica papaya
+Rumex papillaris
+Oryza rufipogon
+Sesbania rostrata
+Mallotus apelta
+Sanionia uncinata
+Baniassa fenestrata
+Pariana multiflora
+Diuraphis noxia
+Centaurea cephalariifolia
+Arabidopsis thaliana
+Aureococcus anophagefferens
+Erigeron canadensis
+Vicia sepium
+Poa annua
+Tursiops truncatus
+Carthamus glaucus subsp. anatolicus
+Diplostephium oblanceolatum
+Carthamus dentatus subsp. ruber
+Hordeum secalinum
+Brachionus plicatilis
+Gossypioides kirkii
+Pisum sativum subsp. elatius
+Bromus tectorum
+Aechmea mertensii
+Sipha flava
+Triticum polonicum
+Rosa rugosa
+Scabiosa sp. Albach 39
+Xiphophorus maculatus
+Saccharum hybrid cultivar
+Neomolinia mandshurica
+Lygeum spartum
+Lycium ruthenicum
+Leptochloa pluriflora
+Elytrophorus globularis
+Puccinellia bruggemannii
+Cortaderia selloana
+Medicago tornata
+Lepidonotopodium sp. YZ-2018
+Asterionella formosa
+Arachis hypogaea
+Stenamma felixi
+Alopecurus japonicus
+Rosa chinensis
+Rhinopithecus bieti
+Culex quinquefasciatus
+Allium sativum
+Brachypodium phoenicoides
+Cricetulus griseus
+Procecidochares atra
+Zenonoida discreta
+Streptochaeta angustifolia
+Holcus annuus subsp. duriensis
+Glycine tomentella
+Trachymyrmex septentrionalis
+Stipa narynica
+Centaurea boissieri subsp. willkommii
+Oxalis cf. villosula EE807
+Agrostemma githago
+Ictidomys tridecemlineatus
+Otachyrium versicolor
+Avenula versicolor
+Hypochaeris albiflora
+Vaccinium corymbosum
+Aegilops triuncialis var. triuncialis
+Saccharum hybrid cultivar GT11
+Cynara syriaca
+Ranunculus repens
+Crithopsis delileana
+Adenocalymma pubescens
+Aegilops tauschii
+Numida meleagris
+Poa gigantea
+Flueggea virosa
+Scyliorhinus canicula
+Alloteropsis angusta
+Aegilops tauschii var. meyeri
+Bromus hordeaceus
+Chrysemys picta
+Echinacea spp. mixed genomic library
+Porites lobata
+Citrullus lanatus
+Eudrilus eugeniae
+Monoraphidium neglectum
+Pinus palustris
+Temnothorax curvispinosus
+Piptatherum virescens
+Pygocentrus nattereri
+Toxoplasma gondii ME49
+Silene pseudoatocion
+Parasteatoda tepidariorum
+Physcomitrella patens
+Osmanthus fragrans
+Triticum aestivum
+Imperata cylindrica
+Papio anubis
+Gracilariopsis longissima
+Poa sp. YLDP137A
+Camponotus floridanus
+Hordeum vulgare subsp. spontaneum
+Eleocharis quinqueflora
+Yponomeuta padellus
+Rattus sp.
+Leptaspis zeylanica
+Acromyrmex echinatior
+Cattleya liliputana
+Adenophora triphylla var. japonica
+Anthoxanthum sp. PT-2016
+Olax imbricata
+Camponotus sp. AIOH
+Brugia malayi
+Hydra vulgaris
+Hordeum erectifolium
+Hordeum roshevitzii
+Castilleja paramensis
+Nannospalax galili
+Lumbricus rubellus
+Selaginella moellendorffii
+Ammopiptanthus mongolicus
+Undaria pinnatifida
+Patrinia saniculifolia
+Passiflora edulis
+Entamoeba invadens IP1
+Tristachya leucothrix
+Zinnia violacea
+Chenopodium album
+Typha latifolia
+Dipsacus asper
+Triticum turgidum subsp. pyramidale
+Hordeum procerum
+uncultured Streptophyta
+Poa palustris
+Amaranthus hybridus subsp. cruentus
+Tachysurus fulvidraco
+Citrus trifoliata
+Brachiaria fragrans
+Pholisma arenarium
+Aptenodytes forsteri
+uncultured eukaryote
+Capsicum annuum
+Petromyzon marinus
+Gracilaria textorii
+Cirsium undulatum
+Anthoxanthum nitens
+Leymus triticoides
+Senna occidentalis
+Tyto alba
+Hyriopsis cumingii
+Amphimedon queenslandica
+Jatropha curcas
+Pseudorca crassidens
+Musa acuminata
+Aegilops searsii
+Aegilops umbellulata
+Gecarcinus lateralis
+Verbascum thapsus
+Beaumontia murtonii
+Aegilops speltoides var. ligustica
+Juniperus phoenicea
+Viscum album
+Aplysia californica
+Brassica rapa
+Bactrocera latifrons
+Longitarsus niger
+Ctenopharyngodon idella
+Dactylis glomerata
+Galeopterus variegatus
+Dermatophagoides pteronyssinus
+Draba incana
+Spirodela polyrhiza
+Ternstroemia peduncularis
+Elymus transhyrcanus
+Asarum caudatum
+uncultured eukaryote;Restionaceae environmental sample
+Drosophila persimilis
+Trichoplusia ni
+Trypanosoma cruzi
+Thecamonas trahens ATCC 50062
+Vaccinium macrocarpon
+Plantago asiatica
+Gerstaeckeria galapagoensis
+Triaenophora shennongjiaensis
+Gentiana rigescens
+Medicago constricta
+Schistosoma haematobium
+Saccharum hybrid cultivar GT21
+Saccharum hybrid cultivar GT28
+Rohdea chinensis
+Honckenya peploides
+Nepenthes ventricosa x Nepenthes alata
+Pyrus pyrifolia
+Cajanus cajan
+Artemisia selengensis
+Eleusine coracana subsp. coracana
+Oryza sativa Japonica Group
+Illicium floridanum
+Myzus persicae
+Rhipsalis baccifera subsp. baccifera
+Olea europaea subsp. europaea
+Avena maroccana
+Menyanthes trifoliata
+Pupilla muscorum
+Champereia manillana var. longistaminea
+Diolcogaster sp. BOLD:AAB0192
+Anolis garmani
+Enchytraeus albidus
+Trichoplax adhaerens
+Chlorokybus atmophyticus
+Leymus cinereus
+Beta vulgaris
+Fallopia multiflora
+Phlebotomus papatasi
+Drosophila takahashii
+Stipagrostis zeyheri subsp. zeyheri
+Polygrapha cyanea
+Elymus libanoticus
+Halodule beaudettei
+Triticum aestivum;Dasypyrum villosum
+Diplostephium foliosissimum
+Pittosporum parvifolium var. beecheyi
+Drosera adelae
+Petunia x hybrida
+Dipsacus fullonum
+Rodgersia sambucifolia
+Camelina sativa
+Ranunculus nipponicus var. submersus
+Welwitschia mirabilis
+Camellia hongkongensis
+Libytheana carinenta bachmanii
+Gossypium raimondii
+Naegleria gruberi strain NEG-M
+Herrania umbratica
+Illinigina sp. EMHAU-15062817
+Phelipanche bungeana
+Macaca mulatta
+Megachile rotundata
+Petermannia cirrosa
+Seseli montanum
+Puccinellia angustata
+Fopius arisanus
+Baccharis genistelloides
+Stenamma expolitum
+Apios americana
+Sesamum indicum
+Actinidia rufa x Actinidia chinensis
+Ptomaphagus walteri
+Strongyloides ratti
+Aphananthe aspera
+Cerastium fontanum
+Nothoprocta perdicaria
+Epimedium sagittatum
+Ceratosolen solmsi marchali
+Pantodon buchholzi
+Nardostachys jatamansi
+Eriobotrya japonica
+Nyssomyia flaviscutellata
+Boehmeria nivea
+Liriodendron tulipifera
+Limulus polyphemus
+Lathyrus decaphyllus
+Mus pahari
+Enchytraeidae sp. En_351
+Brachythecium rivulare
+Anomodon attenuatus
+Douglasdeweya deweyi
+Allium mongolicum
+Leucanthemum vulgare
+Anacyclus clavatus
+Pogonomyrmex occidentalis
+Diospyros kaki
+Muhlenbergia tenuissima
+Symphoricarpos occidentalis
+Silene latifolia subsp. alba
+Neolamprologus brichardi
+Salvelinus alpinus
+Gladiolus hybrid cultivar
+Agropyron cristatum
+Erioneuron pilosum
+Arabidopsis lyrata
+Andryala ragusina
+Actinidia polygama
+Saussurea wettsteiniana
+Heterodera glycines
+Zeugodacus cucurbitae
+Cerastium dinaricum
+Fragaria vesca subsp. americana
+Apteryx rowi
+Melanaphis sacchari
+Nanorana parkeri
+Thinopyrum pungens
+Melocanna baccifera
+Diptera sp. 59 LC-2017
+Sarcandra glabra
+Lathyrus sativus
+Medicago sativa
+Arabidopsis halleri
+Compsopogon caeruleus
+Gasterosteus aculeatus
+Lolium rigidum
+Galkinius equus
+Nipponanthemum nipponicum
+Mythimna pallidicosta
+Rostraria cristata
+Conus miles
+Trichogramma pretiosum
+Diplostephium cinereum
+Streptogyna americana
+Eleocharis erythropoda
+Morus indica
+Ligustrum lucidum
+Triticum aestivum subsp. tibeticum
+Carthamus tenuis;Carthamus glaucus subsp. alexandrinus
+Trichechus manatus latirostris
+Filgueirasia arenicola
+Leishmania peruviana
+Cephalonomia gallicola
+Pseudostellaria okamotoi
+Carpesium lipskyi
+Sphenophorus brunnipennis
+Columba livia
+Briza maxima
+Elymnias hypermnestra
+Lathyrus inconspicuus
+Nymphaea colorata
+Hordeum patagonicum
+Drosophila melanogaster
+Elymus sierrae
+Oreochromis niloticus
+Homo sapiens
+Phyllostachys praecox
+Pisum sativum
+Cirsium vulgare
+Anas platyrhynchos
+Coccinia grandis
+Lobelia baumannii
+Leucanthemum gallaecicum
+Phleum rhaeticum
+Cyanidiaceae sp. MX-AZ01
+Pleurastrum terricola
+Phelipanche ramosa
+Vigna angularis
+Sesleria juncifolia
+Ovis aries musimon
+Senecio cadiscus
+Theligonum cynocrambe
+Silene vulgaris
+Chiropterotriton arboreus
+Oryctolagus cuniculus
+Marvania geminata
+Theileria parva strain Muguga
