@@ -114,19 +114,6 @@ def merge_reads(args):
     "Merged reads using NGmerge"
     out_files = {}
 
-    #First input file headers need to be adjusted for NGmerge
-    #TODO: when NGmerge demultiplex is run this can be blocked, output directly in good format
-
-    # cmd = ['zcat %s|sed "s/\t/#/g" >%s' % (args.forward_in, args.forward)]
-    # log = "R1 change tab to # :!"
-    # run_subprocess(cmd,args,log)
-    #
-    #
-    # cmd = ['cat %s|sed "s/\t/#/g;s/#BL:Z/#BC:Z/g;s/#BR:Z/#BC:Z/g" >%s' % (args.reverse_in, args.reverse)]
-    # log = "R2 make header equal to header R1"
-    # run_subprocess(cmd,args,log)
-
-
     cmd = ['NGmerge']
     #set reads
     cmd+=['-1',args.forward]
