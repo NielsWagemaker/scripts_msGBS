@@ -205,7 +205,7 @@ def join_fastq(r1,r2,outfile,args):
     #WEL weer aangepast : nu eerst -rA dan cut later -r
     #TODO: Checken of dit nu goed is ??? staat het tweede haakje goed (na seqtk seq -r ))
     cmd = ["paste <(seqtk seq -A %s | cut -c1-%s) " % (r1, max_len_R1) +
-           "<(seqtk seq -rA %s |cut -c1-%s|seqtk seq -r )|cut -f1-5" % (r2, max_len_R2)+
+           "<(seqtk seq -rA %s |cut -c1-%s)|seqtk -r - |cut -f1-5" % (r2, max_len_R2)+
            "|sed '/^>/!s/\t/NNNNNNNN/g' |pigz -p %s -c > %s" % (args.threads, outfile)]
     log = "Combine joined fastq file into single fasta file"
     if not os.path.exists(outfile):
