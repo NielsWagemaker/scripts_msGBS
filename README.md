@@ -12,7 +12,7 @@ git clone https://github.com/NielsWagemaker/scripts_msGBS.git
 first install conda following the instructions specified at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html 
 then run the following code.
 ```
-conda env create -f scripts/env/environment.yaml --name msGBS
+conda env create -f src/env/environment.yaml --name msGBS
 conda activate msGBS
 ```
 
