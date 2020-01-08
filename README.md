@@ -21,12 +21,21 @@ tar -xzf taxdb.tar.gz
 ```
 
 # Run the pipeline
+1.Make barcode file
 
-1.Fill in config.yaml
+The barcode file needs at the minimum to follow the format below with each column separated by tabs.
+All mono samples need to have mono in the sample name and all nonmono samples can not have mono in the sample name
+```
+Flowcell    Lane  Barcode_R1	Barcode_R2  Sample      ENZ_R1  ENZ_R2	Wobble_R1	Wobble_R2
+H5HWHCCX2   6	  AACT	        AACT        leafmono71  PacI	  NsiI	3	        3
+H5HWHCCX2   6	  GTGAGC	CCAG	    root1	PacI   	  NsiI	3	        3
+
+```
+2.Fill in config.yaml
 
 specify locations of input reads, and the different parameters you want to use
 
-2.Run the pipeline
+3.Run the pipeline
 ```
 snakemake -j 12
 #-j specifies the amount of cores being used when running the pipeline. 
