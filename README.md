@@ -2,8 +2,12 @@
 All msGBS scripts as described in msGBS article
 
 # Requirements:
+1.Clone pipeline from git
+```
+git clone https://github.com/NielsWagemaker/scripts_msGBS.git
+```
 
-1.Anaconda:
+2.Anaconda:
 
 first install conda following the instructions specified at https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html 
 then run the following code.
@@ -12,7 +16,7 @@ conda env create -f scripts/env/environment.yaml --name msGBS
 conda activate msGBS
 ```
 
-2.blastDB:
+3.blastDB:
 ```
 #install in directory of choice using following command:
 update_blastdb.pl --decompress nt
@@ -37,6 +41,7 @@ specify locations of input reads, and the different parameters you want to use
 
 3.Run the pipeline
 ```
+#Run the following command in the directory that contains Snakefile
 snakemake -j 12
 #-j specifies the amount of cores being used when running the pipeline. 
 ```
