@@ -12,6 +12,11 @@ lane = df.Lane[0]
 projectName=str(random.randint(1,1000000)) #To ensure non overlapping path directories
 tmpdir=config["tmpdir"]+"/msGBS"+projectName
 param_mind=config["min-depth"]
+read1=config["Read1"]
+read1_sub=read1.split(".")[0]
+read2=config["Read2"]
+read2_sub=read2.split(".")[0]
+
 def getParam_mind(param_mind):
     if param_mind=="default" or param_mind == "":
         mind = 2

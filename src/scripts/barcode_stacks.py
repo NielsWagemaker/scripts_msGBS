@@ -22,16 +22,6 @@ parser.add_argument("--output-dir", metavar="outputdir", action="store",
 parser.add_argument('--tmpdir',
                     help='temporary directory')
 args = parser.parse_args()
-if args.outputdir:
-    if not os.path.exists(args.outputdir):
-        os.mkdir(args.outputdir)
-if args.tmpdir:
-    if not os.path.exists(args.tmpdir):
-        os.mkdir(args.tmpdir)
-    if not os.path.exists(os.path.join(args.tmpdir,"clone")):
-        os.mkdir(os.path.join(args.tmpdir, "clone"))
-    if not os.path.exists(os.path.join(args.outputdir,"clone-stacks")):
-        os.mkdir(os.path.join(args.tmpdir,"clone-stacks"))
 if os.path.exists(os.path.join(args.outputdir, "demultiplex.log")):
     os.remove(os.path.join(args.outputdir, "demultiplex.log"))
 

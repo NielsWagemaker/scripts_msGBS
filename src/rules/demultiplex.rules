@@ -8,7 +8,11 @@ rule barcode_stacks:
         tmpdir=expand("{path}/", path=tmpdir),
         outputdir=expand("{path}/output_demultiplex",  path=config["output_dir"])
     output:
-        barcdes=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"])
+        barcdes=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r1=temp(expand("{path}/clone-stacks/{sample}.1.fq.gz",path=tmpdir,sample=SAMPLES)),
+        r2=temp(expand("{path}/clone-stacks/{sample}.2.fq.gz",path=tmpdir,sample=SAMPLES)),
+        clone_r1=temp(expand("{path}/clone/{name}.1.fq.gz",path=tmpdir,name=read1_sub)),
+        clone_r2=temp(expand("{path}/clone/{name}.2.fq.gz",path=tmpdir,name=read2_sub))
     shell:
          """
          python src/scripts/barcode_stacks.py --r1_in {input.R1} --r2_in {input.R2} --output-dir {params.outputdir} -b {input.barcodes} --tmpdir {params.tmpdir}
@@ -22,7 +26,9 @@ rule header_R1:
         lane=lane,
         tmpdir=expand("{path}/", path=tmpdir)
     input:
-        output_WatsonR1=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"])
+        output_WatsonR1=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r1=expand("{path}/clone-stacks/{sample}.1.fq.gz",path=tmpdir,sample=SAMPLES),
+        clone_r1=expand("{path}/clone/{name}.1.fq.gz",path=tmpdir,name=read1_sub),
     output:
         header=temp(expand("{path}/samplesHeader/{{sample}}.1.fq.gz",path=tmpdir))
     shell:
@@ -49,7 +55,9 @@ rule header_R2:
         lane=lane,
         tmpdir=expand("{path}//", path=tmpdir)
     input:
-        output_WatsonR2=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"])
+        output_WatsonR2=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r2=expand("{path}/clone-stacks/{sample}.2.fq.gz",path=tmpdir,sample=SAMPLES),
+        clone_r2=expand("{path}/clone/{name}.2.fq.gz",path=tmpdir,name=read2_sub)
     output:
         header=temp(expand("{path}/samplesHeader/{{sample}}.2.fq.gz",path=tmpdir))
     shell:
