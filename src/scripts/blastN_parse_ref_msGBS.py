@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
 import pandas as pd
-import pysam
 import os
 import sys
 import tempfile
@@ -47,7 +46,7 @@ def parse_args():
 def make_separate_lists(args):
     ### Here i parse the blast results (done at command line) and make a list of contigs that occur in more than one species ###
     print("started making Eukaryote and other list")
-    df = pd.read_csv(('%soutputblast_kingdoms_nt_original_tax.txt'% args.directory), sep= '\t', names = ["contig", "hit", "pident", "E_value", "bp_hit", "kindoms",
+    df = pd.read_csv(args.input, sep= '\t', names = ["contig", "hit", "pident", "E_value", "bp_hit", "kindoms",
                                                                                                          "Fullname", "alignment_length", "start", "stop"],index_col=None)
     print("start computing")
     contig =''
@@ -257,37 +256,37 @@ def make_separate_lists(args):
 
     print("wait")
 
-    bact_out_handle = open(os.path.join(args.directory, 'bact_list.txt'), 'w')
+    bact_out_handle = open(os.path.join(args.directory, 'output_blast/bact_list.txt'), 'w')
     for item in Bacteria_list:
         item = str(item)
         bact_out_handle.write(item + '\n')
     bact_out_handle.close()
 
-    euk_out_handle = open(os.path.join(args.directory, 'euk_list.txt'), 'w')
+    euk_out_handle = open(os.path.join(args.directory, 'output_blast/euk_list.txt'), 'w')
     for item in Eukaryota_list:
         item = str(item)
         euk_out_handle.write(item + '\n')
     euk_out_handle.close()
 
-    AM_fungi_out_handle = open(os.path.join(args.directory, 'AM_fungi_list.txt'), 'w')
+    AM_fungi_out_handle = open(os.path.join(args.directory, 'output_blast/AM_fungi_list.txt'), 'w')
     for item in AM_list:
         item = str(item)
         AM_fungi_out_handle.write(item + '\n')
     AM_fungi_out_handle.close()
 
-    other_fungi_out_handle = open(os.path.join(args.directory, 'other_fungi_list.txt'), 'w')
+    other_fungi_out_handle = open(os.path.join(args.directory, 'output_blast/other_fungi_list.txt'), 'w')
     for item in other_fungi_list:
         item = str(item)
         other_fungi_out_handle.write(item + '\n')
     other_fungi_out_handle.close()
 
-    Archaea_out_handle = open(os.path.join(args.directory, 'Archaea_list.txt'), 'w')
+    Archaea_out_handle = open(os.path.join(args.directory, 'output_blast/Archaea_list.txt'), 'w')
     for item in Archaea_list:
         item = str(item)
         Archaea_out_handle.write(item + '\n')
     Archaea_out_handle.close()
 
-    Virus_out_handle = open(os.path.join(args.directory, 'Virus_list.txt'), 'w')
+    Virus_out_handle = open(os.path.join(args.directory, 'output_blast/Virus_list.txt'), 'w')
     for item in Virus_list:
         item = str(item)
         Virus_out_handle.write(item + '\n')
@@ -297,7 +296,7 @@ def make_separate_lists(args):
     print("")
     print("started producing Eukaryota AND Bactria reference seq lists")
 
-    with open(('%sref.fa'%args.directory), 'r') as f:
+    with open(args.ref, 'r') as f:
         lines = f.readlines()
     number = int(len(lines))
     print("number of lines to process : %s" % number)
@@ -360,7 +359,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Eukaryota reference list")
-    out_handle = open('%sRef_Eukaryote_and_unknown.txt' % args.directory, 'w')
+    out_handle = open('%s/output_denovo/refBlasted.fa' % args.directory, 'w')
     teller =0
     number = int(len(eukdatalist))
     print("number of items to process : %s" % number)
@@ -373,7 +372,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing flowering plants reference list")
-    out_handle = open('%sRef_flowering_plants.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_flowering_plants.txt' % args.directory, 'w')
     teller =0
     number = int(len(flowerdatalist))
     print("number of items to process : %s" % number)
@@ -386,7 +385,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Bacteria reference list")
-    out_handle = open('%sRef_Bactria.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_Bactria.txt' % args.directory, 'w')
     teller =0
     number = int(len(bactdatalist))
     print("number of items to process : %s" % number)
@@ -399,7 +398,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing AM fungi reference list")
-    out_handle = open('%sRef_AM_Fungi.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_AM_Fungi.txt' % args.directory, 'w')
     teller =0
     number = int(len(AMdatalist))
     print("number of items to process : %s" % number)
@@ -412,7 +411,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Other fungi reference list")
-    out_handle = open('%sRef_other_Fungi.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_other_Fungi.txt' % args.directory, 'w')
     teller =0
     number = int(len(otherFUNGIlist))
     print("number of items to process : %s" % number)
@@ -425,7 +424,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Archaea reference list")
-    out_handle = open('%sRef_Archaea.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_Archaea.txt' % args.directory, 'w')
     teller =0
     number = int(len(Archaealist))
     print("number of items to process : %s" % number)
@@ -438,7 +437,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Virus reference list")
-    out_handle = open('%sRef_Virus.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Ref_Virus.txt' % args.directory, 'w')
     teller =0
     number = int(len(Viruslist))
     print("number of items to process : %s" % number)
@@ -454,7 +453,7 @@ def make_separate_lists(args):
 
     print("")
     print("started writing Eukaryota  Name list")
-    out_handle = open('%sEUKARYOTA_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/EUKARYOTA_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_Eukaryota_list))
     print("number of items to process : %s" % number)
@@ -464,7 +463,7 @@ def make_separate_lists(args):
     out_handle.close()
 
     print("started writing Bacteria Name list")
-    out_handle = open('%sBACTERIA_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/BACTERIA_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_Bacteria_list))
     print("number of items to process : %s" % number)
@@ -474,7 +473,7 @@ def make_separate_lists(args):
     out_handle.close()
 
     print("started writing AM fungi Name list")
-    out_handle = open('%sAM_FUNGI_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/AM_FUNGI_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_AM_list))
     print("number of items to process : %s" % number)
@@ -484,7 +483,7 @@ def make_separate_lists(args):
     out_handle.close()
 
     print("started writing other fungi Name list")
-    out_handle = open('%sOTHER_FUNGI_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/OTHER_FUNGI_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_other_fungi_list))
     print("number of items to process : %s" % number)
@@ -494,7 +493,7 @@ def make_separate_lists(args):
     out_handle.close()
 
     print("started writing Archaea Name list")
-    out_handle = open('%sArchaea_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Archaea_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_Archaea_list))
     print("number of items to process : %s" % number)
@@ -504,7 +503,7 @@ def make_separate_lists(args):
     out_handle.close()
 
     print("started writing Virus Name list")
-    out_handle = open('%sVirus_NAMES.txt' % args.directory, 'w')
+    out_handle = open('%s/output_blast/Virus_NAMES.txt' % args.directory, 'w')
     teller =0
     number = int(len(Name_Virus_list))
     print("number of items to process : %s" % number)

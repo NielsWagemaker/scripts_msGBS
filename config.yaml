@@ -1,0 +1,20 @@
+#path to output directory
+output_dir: "output"
+#input directory where raw reads are
+input_dir       : "data"
+barcodes: "barcodes.tsv"
+#barcode file(barcode file should be kept inside input directory) and enzymes will be included in barcode file
+tmpdir        : "/scratch/tmp/"
+#number of sequencing cycles
+cycles        : 150
+#Sequence Reads
+Read1 : "subset_R1_Run1.fq.gz"
+Read2 : "subset_R2_Run1.fq.gz"
+#genome directory (leaave it blank in denovo mode)
+ref_dir: ""
+#genome name (leaave it blank in denovo mode)
+genome: ""
+
+min-depth: 0
+#Location of the blastDB
+blastDB: "/scratch2/maarten/blastDB"
