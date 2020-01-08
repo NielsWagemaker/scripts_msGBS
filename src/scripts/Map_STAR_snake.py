@@ -373,7 +373,7 @@ def bam_output(args):
     merged_sam = os.path.join(args.output_dir, 'mergedAligned.out.sam')
     joined_sam = os.path.join(args.output_dir, 'joinedAligned.out.sam')
 
-    out_sam = tempfile.NamedTemporaryFile(prefix='tmp', suffix='.sam', dir=args.output_dir,delete=False)
+    out_sam = tempfile.NamedTemporaryFile(prefix='tmp', suffix='.sam', dir=args.output_dir)
     # rewrite sam file merged and joined for watson and crick
     parse_sam(merged_sam, out_sam.name, 'merged', 'tmp')
     # TODO: determine why joined reads have more soft-clips or single read matches
