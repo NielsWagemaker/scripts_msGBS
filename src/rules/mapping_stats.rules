@@ -7,7 +7,7 @@ rule mapping:
     input:
         refBlasted=expand("{path}/output_denovo/refBlasted.fa",path=config["output_dir"]),
         joined_All=expand("{path}/output_denovo/all.joined.fastq.gz",  path=config["output_dir"]),
-        merged_All=expand("{path}/output_denovo/all.merged.fastq.txt.gz",  path=config["output_dir"])
+        merged_All=expand("{path}/output_denovo/all.merged.fastq.gz",  path=config["output_dir"])
 
 
 
