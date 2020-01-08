@@ -1,0 +1,197 @@
+#Creation of denovo files
+
+rule merge:
+    input:
+        R1_in=expand("{path}/output_demultiplex/demulti_R1.fq.gz",  path=config["output_dir"]),
+        R2_in=expand("{path}/output_demultiplex/demulti_R2.fq.gz",  path=config["output_dir"])
+    output:
+        unAssembled_1=temp(expand("{path}/output_denovo/unassembled_1.fastq.gz",  path=config["output_dir"])),
+        unAssembled_2=temp(expand("{path}/output_denovo/unassembled_2.fastq.gz",  path=config["output_dir"])),
+        merged_Assembled=expand("{path}/output_denovo/all.merged.fastq.txt.gz",  path=config["output_dir"])
+    params:
+        unAssembled=expand("{path}/output_denovo/unassembled",  path=config["output_dir"])
+    threads: 32
+    shell:
+        "NGmerge -1 {input.R1_in} -2 {input.R2_in} "
+        "-o output/output_denovo/all.merged.fastq.txt.gz -n {threads} -f {params.unAssembled} "
+        "-w src/RemoveAdapter_files/qual_profile.txt -q 33 -u 41 -z"
+
+
+rule merge_mono:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_demultiplex/monos",  path=config["output_dir"]),
+        unAssembled=expand("{path}/output_denovo/",  path=config["output_dir"])
+    input:
+        R1_in=expand("{path}/output_demultiplex/monos/{sample}.demulti_R1.gz",  path=config["output_dir"],sample=MONOS),
+        R2_in=expand("{path}/output_demultiplex/monos/{sample}.demulti_R2.gz",  path=config["output_dir"],sample=MONOS)
+    output:
+        unAssembled_1=temp(expand("{path}/output_denovo/monos/{{sample}}.joined_1.fastq.gz",  path=config["output_dir"])),
+        unAssembled_2=temp(expand("{path}/output_denovo/monos/{{sample}}.joined_2.fastq.gz",  path=config["output_dir"])),
+        merged_Assembled=temp(expand("{path}/output_denovo/monos/{{sample}}.merged.fastq.txt.gz",  path=config["output_dir"]))
+    threads: 1
+    shell:
+        "NGmerge -1 {params.inputdir}/{params.sample}.demulti_R1.gz "
+        "-2 {params.inputdir}/{params.sample}.demulti_R2.gz "
+        "-o output/output_denovo/monos/{params.sample}.merged.fastq.txt.gz -n {threads} "
+        "-f output/output_denovo/monos/{params.sample}.joined "
+        "-w src/RemoveAdapter_files/qual_profile.txt -q 33 -u 41 -z"
+
+rule combine_joined_all:
+    params:
+        inputdir=expand("{path}/output_denovo/",  path=config["output_dir"]),
+        cycles=getParam_cycle(param_cycle)
+    input:
+        unAssembled_1=expand("{path}/output_denovo/unassembled_1.fastq.gz",  path=config["output_dir"]),
+        unAssembled_2=expand("{path}/output_denovo/unassembled_2.fastq.gz",  path=config["output_dir"]),
+        barcodes=expand("{path}/{bar}", path=config["input_dir"], bar=config["barcodes"])
+    output:
+        joined_All=expand("{path}/output_denovo/all.joined.fastq.gz",  path=config["output_dir"])
+    shell:
+        "python src/scripts/join_fastq.py -r1 {input.unAssembled_1} "
+        "-r2 {input.unAssembled_2} "
+        "-o {output.joined_All}  "
+        "--barcodes {input.barcodes} --cycles {params.cycles}"
+
+
+rule combine_joined:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"]),
+        cycles=getParam_cycle(param_cycle)
+    input:
+        unAssembled_1=expand("{path}/output_denovo/monos/{sample}.joined_1.fastq.gz",path=config["output_dir"],sample=MONOS),
+        unAssembled_2=expand("{path}/output_denovo/monos/{sample}.joined_2.fastq.gz",path=config["output_dir"],sample=MONOS),
+        barcodes=expand("{path}/{bar}", path=config["input_dir"], bar=config["barcodes"])
+    output:
+        joined_combined=temp(expand("{path}/output_denovo/monos/{{sample}}.joined.fastq.gz",  path=config["output_dir"])),
+    shell:
+        "python src/scripts/join_fastq.py -r1 {params.inputdir}/{params.sample}.joined_1.fastq.gz "
+        "-r2 {params.inputdir}/{params.sample}.joined_2.fastq.gz "
+        "-o {params.inputdir}/{params.sample}.joined.fastq.gz "
+        "--barcodes {input.barcodes} --cycles {params.cycles}"
+
+
+rule cat_monos:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"])
+    input:
+        joined_combined=expand("{path}/output_denovo/monos/{sample}.joined.fastq.gz",  path=config["output_dir"],sample=MONOS),
+        merged_Assembled=expand("{path}/output_denovo/monos/{sample}.merged.fastq.txt.gz",  path=config["output_dir"],sample=MONOS)
+    output:
+        monoFA=temp(expand("{path}/output_denovo/monos/{{sample}}.combined.fastq.txt.gz",  path=config["output_dir"]))
+    shell:
+        "cat {params.inputdir}/{params.sample}.* > {params.inputdir}/{params.sample}.combined.fastq.txt.gz"
+
+rule sort:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"])
+    input:
+        monoFA=expand("{path}/output_denovo/monos/{sample}.combined.fastq.txt.gz",  path=config["output_dir"],sample=MONOS)
+    output:
+        derep=temp(expand("{path}/output_denovo/monos/{{sample}}.sorted.fa",  path=config["output_dir"]))
+    shell:
+         "vsearch -sortbylength {params.inputdir}/{params.sample}.combined.fastq.txt.gz "
+         "--output {params.inputdir}/{params.sample}.sorted.fa"
+
+rule derep:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"]),
+        minSize=getParam_mind(param_mind)
+    input:
+        monoFA=expand("{path}/output_denovo/monos/{sample}.sorted.fa",  path=config["output_dir"],sample=MONOS)
+    output:
+        derep=temp(expand("{path}/output_denovo/monos/{{sample}}.derep.fa",  path=config["output_dir"]))
+    shell:
+         "vsearch -derep_fulllength {params.inputdir}/{params.sample}.sorted.fa "
+         "-sizeout -minuniquesize {params.minSize}  -output {params.inputdir}/{params.sample}.derep.fa"
+
+
+rule sort_2:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"])
+    input:
+        derep=expand("{path}/output_denovo/monos/{sample}.derep.fa",  path=config["output_dir"],sample=MONOS)
+    output:
+        derep=temp(expand("{path}/output_denovo/monos/{{sample}}.ordered.fa",  path=config["output_dir"]))
+    shell:
+         "vsearch -sortbylength {params.inputdir}/{params.sample}.derep.fa "
+         "--output {params.inputdir}/{params.sample}.ordered.fa"
+
+rule cluster:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"]),
+        minSize=getParam_mind(param_mind)
+    input:
+        monoFA=expand("{path}/output_denovo/monos/{sample}.ordered.fa",  path=config["output_dir"],sample=MONOS),
+    output:
+        derep=temp(expand("{path}/output_denovo/monos/{{sample}}.clustered.fa",  path=config["output_dir"]))
+    threads: 1
+    shell:
+         "vsearch -cluster_smallmem {params.inputdir}/{params.sample}.ordered.fa -id 0.95 "
+         "-centroids {params.inputdir}/{params.sample}.clustered.fa -sizeout -strand both --threads {threads}"
+
+rule rename_fast:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/output_denovo/monos",  path=config["output_dir"]),
+        minSize=getParam_mind(param_mind)
+    input:
+        monoFA=expand("{path}/output_denovo/monos/{sample}.clustered.fa",  path=config["output_dir"],sample=MONOS),
+    output:
+        derep=temp(expand("{path}/output_denovo/monos/{{sample}}.renamed.fa",  path=config["output_dir"]))
+    shell:
+        'cat {params.inputdir}/{params.sample}.clustered.fa | python src/scripts/rename_fast.py -g {params.sample} '
+        '-n > {params.inputdir}/{params.sample}.renamed.fa'
+
+rule ref_out:
+    input:
+        monoFA=expand("{path}/output_denovo/monos/{sample}.renamed.fa",  path=config["output_dir"],sample=MONOS)
+    output:
+        ref=temp(expand("{path}/output_denovo/ref.fa",path=config["output_dir"]))
+    params:
+        inputdir=expand("{path}/output_denovo/",  path=config["output_dir"])
+    shell:
+        "cat {params.inputdir}/monos/*.renamed.fa > {output.ref}"
+
+
+rule blast:
+    input:
+        ref=expand("{path}/output_denovo/ref.fa",path=config["output_dir"])
+    output:
+        blast_file=expand("{path}/output_blast/outputblast_kingdoms.tsv",path=config["output_dir"])
+    params:
+        blastDB=config["blastDB"]
+    threads:40
+    shell:
+        """
+        export BLASTDB=$BLASTDB:{params.blastDB}
+        blastn -query {input.ref} -db {params.blastDB}/nt -out {output.blast_file} \
+        -num_alignments 1 -num_threads {threads} \
+        -outfmt '6 qseqid sseqid pident evalue bitscore sskingdom sscinames length sstart send'
+        """
+
+rule blastref:
+    input:
+        ref=expand("{path}/output_denovo/ref.fa",path=config["output_dir"]),
+        blast_file=expand("{path}/output_blast/outputblast_kingdoms.tsv",path=config["output_dir"])
+    output:
+        refBlasted=expand("{path}/output_denovo/refBlasted.fa",path=config["output_dir"])
+    params:
+        outputDir=config["output_dir"]
+    shell:
+        "python src/scripts/blastN_parse_ref_msGBS.py  "
+        "-i {input.blast_file} -r {input.ref} "
+        "-F src/blastN_parse_ref_genus_lists/OTHER_FUNGI_NAMES.txt "
+        "-f src/blastN_parse_ref_genus_lists/Flowering_plant_genera_list.csv "
+        "-b src/blastN_parse_ref_genus_lists/Bryophytes_genera_list.csv "
+        "-G src/blastN_parse_ref_genus_lists/Gymnosperms_genera_list.csv "
+        "-P src/blastN_parse_ref_genus_lists/Pteridophytes_genera_list.csv "
+        "-dir {params.outputDir} "
+
+

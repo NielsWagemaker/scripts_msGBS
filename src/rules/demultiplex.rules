@@ -1,0 +1,116 @@
+#Demultiplex ##################
+rule barcode_stacks:
+    input:
+        barcodes=expand("{path}/{bar}", path=config["input_dir"], bar=config["barcodes"]),
+        R1=expand("{path}/{read1}",path=config["input_dir"],read1=config["Read1"]),
+        R2=expand("{path}/{read1}",path=config["input_dir"],read1=config["Read2"])
+    params:
+        tmpdir=expand("{path}/", path=tmpdir),
+        outputdir=expand("{path}/output_demultiplex",  path=config["output_dir"])
+    output:
+        barcdes=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r1=temp(expand("{path}/clone-stacks/{sample}.1.fq.gz",path=tmpdir,sample=SAMPLES)),
+        r2=temp(expand("{path}/clone-stacks/{sample}.2.fq.gz",path=tmpdir,sample=SAMPLES)),
+        clone_r1=temp(expand("{path}/clone/{name}.1.fq.gz",path=tmpdir,name=read1_sub)),
+        clone_r2=temp(expand("{path}/clone/{name}.2.fq.gz",path=tmpdir,name=read2_sub))
+    shell:
+         """
+         python src/scripts/barcode_stacks.py --r1_in {input.R1} --r2_in {input.R2} --output-dir {params.outputdir} -b {input.barcodes} --tmpdir {params.tmpdir}
+         """
+
+
+rule header_R1:
+    params:
+        sample="{sample}",
+        flowcell=flowCell,
+        lane=lane,
+        tmpdir=expand("{path}/", path=tmpdir)
+    input:
+        output_WatsonR1=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r1=expand("{path}/clone-stacks/{sample}.1.fq.gz",path=tmpdir,sample=SAMPLES),
+        clone_r1=expand("{path}/clone/{name}.1.fq.gz",path=tmpdir,name=read1_sub),
+    output:
+        header=temp(expand("{path}/samplesHeader/{{sample}}.1.fq.gz",path=tmpdir))
+    shell:
+         "zcat {params.tmpdir}clone-stacks/{params.sample}.1.fq.gz | cut -f1 -d ' ' | "
+         "sed -e '/^@/ s/$/\tRG:Z:{params.flowcell}_{params.lane}_{params.sample}/'| gzip -c   > {output.header}"
+
+rule cat_R1:
+    input:
+        R2_out=expand("{path}/trimmed/{sample}.trimmed.pair1.truncated.gz",path=tmpdir,sample=SAMPLES)
+
+    output:
+        outFile=expand("{path}/output_demultiplex/demulti_R1.fq.gz",  path=config["output_dir"])
+    params:
+        path=expand("{path}/", path=tmpdir),
+    shell:
+       "ls -v {params.path}/trimmed/*pair1.truncated.gz | xargs cat  > {output.outFile}"
+
+
+
+rule header_R2:
+    params:
+        sample="{sample}",
+        flowcell=flowCell,
+        lane=lane,
+        tmpdir=expand("{path}//", path=tmpdir)
+    input:
+        output_WatsonR2=expand("{path}/output_demultiplex/barcode_stacks.tsv",path=config["output_dir"]),
+        r2=expand("{path}/clone-stacks/{sample}.2.fq.gz",path=tmpdir,sample=SAMPLES),
+        clone_r2=expand("{path}/clone/{name}.2.fq.gz",path=tmpdir,name=read2_sub)
+    output:
+        header=temp(expand("{path}/samplesHeader/{{sample}}.2.fq.gz",path=tmpdir))
+    shell:
+         "zcat {params.tmpdir}clone-stacks/{params.sample}.2.fq.gz | cut -f1 -d ' ' | "
+         "sed -e '/^@/ s/$/\tRG:Z:{params.flowcell}_{params.lane}_{params.sample}/'| gzip -c   > {output.header}"
+
+rule cat_R2:
+    input:
+        R2_out=expand("{path}/trimmed/{sample}.trimmed.pair2.truncated.gz",path=tmpdir,sample=SAMPLES)
+    output:
+        outFile=expand("{path}/output_demultiplex/demulti_R2.fq.gz",  path=config["output_dir"])
+    params:
+        path=expand("{path}/", path=tmpdir),
+    shell:
+       "ls -v {params.path}/trimmed/*pair2.truncated.gz | xargs cat  > {output.outFile}"
+
+rule trim:
+    params:
+        sample='{sample}',
+        outputdir =expand("{path}",  path=tmpdir)
+    input:
+        R1_in=expand("{path}/samplesHeader/{sample}.1.fq.gz",path=tmpdir,sample=SAMPLES),
+        R2_in=expand("{path}/samplesHeader/{sample}.2.fq.gz",path=tmpdir,sample=SAMPLES)
+    output:
+        R1_out=temp(expand("{path}/trimmed/{{sample}}.trimmed.pair1.truncated.gz",  path=tmpdir)),
+        R2_out=temp(expand("{path}/trimmed/{{sample}}.trimmed.pair2.truncated.gz",  path=tmpdir))
+    shell:
+        "AdapterRemoval --file1 {params.outputdir}/samplesHeader/{params.sample}.1.fq.gz "
+        "--file2 {params.outputdir}/samplesHeader/{params.sample}.2.fq.gz "
+        "--basename {params.outputdir}/trimmed/{params.sample}.trimmed --trimns --trimqualities "
+        "--adapter-list src/RemoveAdapter_files/adapters.txt --gzip"
+
+
+rule move_monos_R1:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/trimmed",  path=tmpdir),
+        outputdir=expand("{path}/output_demultiplex/monos", path=config["output_dir"])
+    input:
+        R1_in=expand("{path}/trimmed/{sample}.trimmed.pair1.truncated.gz",  path=tmpdir,sample=MONOS)
+    output:
+        R1_demulti=expand("{path}/output_demultiplex/monos/{{sample}}.demulti_R1.gz",  path=config["output_dir"])
+    shell:
+        'cp {params.inputdir}/{params.sample}.trimmed.pair1.truncated.gz {params.outputdir}/{params.sample}.demulti_R1.gz'
+
+rule move_monos_R2:
+    params:
+        sample='{sample}',
+        inputdir=expand("{path}/trimmed",  path=tmpdir),
+        outputdir=expand("{path}/output_demultiplex/monos", path=config["output_dir"])
+    input:
+        R2_in=expand("{path}/trimmed/{sample}.trimmed.pair2.truncated.gz",  path=tmpdir,sample=MONOS)
+    output:
+        R2_demulti=expand("{path}/output_demultiplex/monos/{{sample}}.demulti_R2.gz",  path=config["output_dir"])
+    shell:
+        'cp {params.inputdir}/{params.sample}.trimmed.pair2.truncated.gz {params.outputdir}/{params.sample}.demulti_R2.gz'

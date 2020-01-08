@@ -18,17 +18,18 @@ def get_stats(args):
     """get stats based on bam file"""
     mapping_dict = nested_dict.nested_dict()
     try:
-        handle = pysam.AlignmentFile(args.input, 'rb')
+        handle = pysam.AlignmentFile(args.input, 'r')
     except OSError:
-        print 'error'
+        print('error')
     #Samples can be added from several lanes, which will results in different read groups
     #in order to only account for samples here, make a dict mapping RG_ID to sample
+
     RG_to_sample = dict([(r['ID'],r['SM']) for r in handle.header['RG']])
     count = 0
     for read in handle:
         count += 1
         if not count %100000:
-            print '%s reads processed' % count
+            print('%s reads processed' % count)
         if not read.is_duplicate and not read.is_qcfail:
             #make dict of read tag objects
             tag_dict = dict(read.tags)
@@ -41,9 +42,10 @@ def get_stats(args):
                     tmpsamplelist =list(tmpsample)
                     tmpsamplelist[10] = '2'
                     sample = ''.join(tmpsamplelist)
+                    print(tmpsample)
                 except TypeError:
                     sample = 'unknown'
-                    print "unknown samples detected "
+                    print("unknown samples detected ")
             try:
                 mapping_dict['total'][sample] += 1
             except TypeError:
@@ -57,7 +59,7 @@ def get_stats(args):
 
 def write_output(mapping_dict, args):
     """write output according to specifications"""
-    handle = pysam.AlignmentFile(args.input, 'rb')
+    handle = pysam.AlignmentFile(args.input, 'r')
     out_handle = open(args.output,'w')
     header = ['Species','Locus']
     sample_order = []

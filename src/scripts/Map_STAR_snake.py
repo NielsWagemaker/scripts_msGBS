@@ -8,7 +8,6 @@ import tempfile
 import urllib
 import json
 import ssl
-from Bio import SeqIO
 
 __author__ = 'thomasvangurp'
 __description__ = "map reads orders of magnitudes faster using STAR"
@@ -24,14 +23,6 @@ def parse_args():
                         help='tmp directory', default="/tmp/")
     parser.add_argument('--input_dir',
                         help='optional: Choose input directory')
-    # parser.add_argument('--reads_R1',
-    #                     help='Forward unmerged reads')
-    # parser.add_argument('--reads_R2',
-    #                     help='Reverse unmerged reads')
-    # parser.add_argument('--merged',
-    #                     help='merged watson and crick fastq')
-    # parser.add_argument('--reference',
-    #                     help='reference clusters')
     parser.add_argument('--barcodes',
                         help='Barcodes used in output')
     parser.add_argument('--species',
@@ -44,17 +35,15 @@ def parse_args():
                         help='extra flags for testing')
     args = parser.parse_args()
     if args.input_dir:
-        args.reads_R1 = os.path.join(args.input_dir, 'merged.unassembled_1_correct_header.fastq.gz')
-        args.reads_R2 = os.path.join(args.input_dir, 'merged.unassembled_2_correct_header.fastq.gz')
-        args.merged = os.path.join(args.input_dir, 'all.merged.fq.gz')
-        args.joined = os.path.join(args.input_dir, 'all.joined.fq.gz')
-        args.reference = os.path.join(args.input_dir, 'Ref_Eukaryote_and_unknown.txt')
+        args.reads_R12 = os.path.join(args.input_dir, 'all.joined.fastq.gz')
+        args.merged = os.path.join(args.input_dir, 'all.merged.fastq.txt.gz')
+        args.reference = os.path.join(args.input_dir, 'refBlasted.fa')
     if args.output_dir:
         if not os.path.exists(args.output_dir):
             os.mkdir(args.output_dir)
         if 'log' not in args:
             args.log = os.path.join(args.output_dir, 'mapping_variantcalling.log')
-    args.tmpdir = tempfile.mkdtemp(suffix='STAR', prefix='tmp', dir=args.tmpdir)
+    #args.tmpdir = tempfile.mkdtemp(suffix='STAR', prefix='tmp', dir=args.tmpdir)
     return args
 
 
@@ -72,7 +61,9 @@ def get_version():
     url = 'https://api.github.com/repos/thomasvangurp/epiGBS/commits'
     context = ssl._create_unverified_context()
     result = json.load(urllib.urlopen(url, context=context))
-    print ''
+    print ('')
+
+
 
 
 def run_subprocess(cmd, args, log_message):
@@ -86,8 +77,8 @@ def run_subprocess(cmd, args, log_message):
         log.flush()
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, executable='/bin/bash')
         stdout, stderr = p.communicate()
-        stdout = stdout.replace('\r', '\n')
-        stderr = stderr.replace('\r', '\n')
+        stdout = stdout.decode("utf-8").replace('\r', '\n')
+        stderr = stderr.decode("utf-8").replace('\r', '\n')
         if stdout:
             log.write('stdout:\n%s\n' % stdout)
         if stderr:
@@ -103,72 +94,44 @@ def process_reads_merged(args):
     """process reads and make them ready for mapping with STAR"""
     merged = tempfile.NamedTemporaryFile(suffix=".fastq", prefix='merged', dir=args.tmpdir, delete=False)
     args.merged_out = merged.name
-    print 'Started processing merged reads'
+    #args.merged_out = '/scratch2/niels/mapping/boomkikker/STAR/tmp/mergedRRuZr9.fastq'
+    print('Started processing merged reads')
     if args.merged.endswith('.gz'):
-        file_in_handle = gzip.open(args.merged, 'rb')
+        cmd = "pigz -cd %s" % args.merged
     else:
-        file_in_handle = open(args.merged, 'r')
-    handle = open(merged.name, 'w')
-    j = 0
-    while True:
-        read = []
-        for i in range(4):
-            try:
-                read.append(file_in_handle.next())
-            except StopIteration:
-                break
-        j += 1
-        if not j % 1000000:
-            print 'Processed %s reads' % j
-        if not read:
-            break
-        header = '@%s\n' % (read[0][1:-1].replace(' ', '|').replace('\t', '|'))
-        handle.write(header + read[1] + '+\n' + read[3])
-    handle.close()
+        cmd = "cat %s" % args.merged
+    if args.sequences != None:
+        cmd += '|head -n %s' % (int(args.sequences) * 4)
+    log = 'use mawk to convert spaces and tabs to | in merged reads'
+    cmd += """ |mawk '{if (NR%%4==1) gsub(" ","|") gsub(/\t/,"|");print}' > %s""" % (args.merged_out)
+    #TODO : hier zogen dat er een .gz file als output komt?
+    run_subprocess([cmd], args, log)
     return args
 
 
 def process_reads_joined(args):
     """process reads and make them ready for mapping with STAR"""
 
-    joined_r1 = tempfile.NamedTemporaryFile(suffix=".fastq", prefix='joined_R1_', dir=args.tmpdir,
-                                            delete=False)
-    joined_r2 = tempfile.NamedTemporaryFile(suffix=".fastq", prefix='joined_R2_', dir=args.tmpdir,
-                                            delete=False)
-    args.joined_r1 = joined_r1.name
-    args.joined_r2 = joined_r2.name
+    joined_r12 = tempfile.NamedTemporaryFile(suffix=".fastq", prefix='joined_R12_', dir=args.tmpdir,
+                                             delete=False)
 
-    print 'Started processing joined reads'
-    if args.reads_R1.endswith('.gz'):
-        r1_handle = gzip.open(args.reads_R1, 'rb')
-        r2_handle = gzip.open(args.reads_R2, 'rb')
+    #use mawk to write fastq files, replacing tabs and spaces for |
+    args.joined_r12_out = joined_r12.name
+    if args.reads_R12.endswith('.gz'):
+        cmd = "pigz -cd %s" % args.reads_R12
     else:
-        r1_handle = open(args.reads_R1, 'rb')
-        r2_handle = open(args.reads_R2, 'rb')
-    # make 4 file handles for forward and reverse watson and crick
-    r1_handle_out = open(args.joined_r1, 'w')
-    r2_handle_out = open(args.joined_r2, 'w')
-    j = 0
-    while True:
-        read_r1 = []
-        read_r2 = []
-        for i in range(4):
-            try:
-                read_r1.append(r1_handle.next())
-                read_r2.append(r2_handle.next())
-            except StopIteration:
-                break
-        j += 1
-        if not j % 1000000:
-            print 'Processed %s reads' % (j)
-        if not read_r1:
-            break
+        cmd = "cat %s" % args.reads_R12
+    if args.sequences != None:
+        cmd += '|head -n %s' % (int(args.sequences) * 4)
+    log = 'use mawk to convert spaces and tabs to | in forward reads'
 
-        header = '@%s\n' % (read_r1[0][1:-1].replace(' ', '|').replace('\t', '|'))
-        r1_handle_out.write(header + read_r1[1].upper() + '+\n' + read_r1[3])
-        r2_handle_out.write(header + read_r2[1].upper() + '+\n' + read_r2[3])
-    r1_handle_out.close()
-    r2_handle_out.close()
+    #TODO : {if (NR%%2==1) zorgt ervoor dat dit alleen in elke tweede regel van de output gedaan wordt.
+    #TODO : Dit moet aangepast worden wanneer de joined.fastq.gz file ook de qual info meekrijgt (zoals de planning is)
+
+    cmd += """ |mawk '{if (NR%%4==1) gsub(" ","|") gsub(/\t/,"|");print}' > %s""" % (args.joined_r12_out)
+
+    #TODO : hier zorgen dat er een .gz file als output komt?
+    run_subprocess([cmd], args, log)
     return args
 
 
@@ -189,7 +152,7 @@ def index_STAR(args):
 
     # get file handle for input reference file
     try:
-        file_handle = open(args.reference, 'r') ###heb U toegevoegd... is dat goed? en weer verwijderd###
+        file_handle = open(args.reference, 'r')
     except IOError:
         raise IOError('file %s does not exist' % args.reference)
 
@@ -204,8 +167,7 @@ def index_STAR(args):
     for line in file_handle:
         if line.startswith('>'):
             if seq != '':
-                if 'nnnnnnnn' in seq:
-                    #TODO:changed to nnnnnnn and removed seq.upper()
+                if 'NNNNNNNN' in seq.upper():
                     joined_len += len(seq)
                     joined_count += 1
                     ref_joined_handle.write(header + seq.upper() + '\n')
@@ -251,18 +213,19 @@ def map_STAR(args):
         cmd = "STAR --runThreadN %s --genomeDir %s" % (args.threads, STAR_index_dir)
 
         if type == 'joined':
-            # cmd += " --readFilesIn %(joined)s" % vars(args)
-            cmd += " --readFilesIn %(joined_r1)s" % vars(args)
+            cmd += " --readFilesIn %(joined_r12_out)s" % vars(args)
         else:
             cmd += " --readFilesIn %(merged_out)s" % vars(args)
 
+        #cmd += " --outReadsUnmapped Fastx"  # output of unmapped reads for inspection
+        # TODO: implement --alignEndsType endtoend mapping after joined reads are merged
         cmd += " --outSAMattributes NM MD AS --outSAMtype SAM"
         cmd += " --outFileNamePrefix %s" % (os.path.join(args.output_dir, '%s' % (type)))
         cmd += " --outFilterMatchNminOverLread 0.95" \
                " --clip3pNbases 1" \
                " --outSAMorder PairedKeepInputOrder" \
                " --outFilterMultimapScoreRange 0" \
-               " --alignEndsType EndToEnd" \
+               " --alignEndsType Extend5pOfRead1" \
                " --scoreGapNoncan 0" \
                " --scoreGapGCAG 0" \
                " --scoreGapATAC 0" \
@@ -271,8 +234,6 @@ def map_STAR(args):
                " --scoreInsOpen 0" \
                " --scoreInsBase 0" \
                " --alignMatesGapMax 20"
-        # make sure we have a bam file sorted by name
-        # outFilterMultimapNmax 1 (was even 2 dan mogen twee reads mappen)
         if args.sequences:
             cmd += ' --readMapNumber %s' % args.sequences
         if args.extraflags:
@@ -305,7 +266,7 @@ def parse_sam(in_file, out_file, read_type, strand):
         split_line = line.rstrip('\n').split('\t')
         # skip read pairs with improper flags.
         # TODO: do this filtering in mark_PCR_duplicates or elsewhere with access to pysam.
-        if split_line[1] not in ['0', '99', '147']: #hier komt 16 wel eens in de file voor ; wat betekend dat?
+        if split_line[1] not in ['0', '99', '147']:
             mismatch += 1
             count += 1
             # continue
@@ -323,17 +284,13 @@ def parse_sam(in_file, out_file, read_type, strand):
             count += 1
             # continue
         header = split_line[0].split('|')
-        # if 'CAV3EANXX_2' in header[3]:
-        #     header[3] += ' ' + header[4]
-        #     header.pop(4)
         out_line = [header[0]]
         out_line += split_line[1:]
-        out_line += header[3:6]
+        out_line += header[1:6]
         out_handle.write('\t'.join(out_line) + '\n')
         count += 1
-    print '%s mismatches out of %s' % (mismatch, count)
-    print '%s reads out of  %s soft clipped more than 5' % (clip_count_total, count)
-
+    print('%s mismatches out of %s' % (mismatch, count))
+    print('%s reads out of  %s soft clipped more than 5' % (clip_count_total, count))
 
 def addRG(in_files, args):
     """make header for output bamfile and split in watson and crick"""
@@ -415,14 +372,16 @@ def bam_output(args):
 
     merged_sam = os.path.join(args.output_dir, 'mergedAligned.out.sam')
     joined_sam = os.path.join(args.output_dir, 'joinedAligned.out.sam')
+
     out_sam = tempfile.NamedTemporaryFile(prefix='tmp', suffix='.sam', dir=args.output_dir)
     # rewrite sam file merged and joined for watson and crick
     parse_sam(merged_sam, out_sam.name, 'merged', 'tmp')
     # TODO: determine why joined reads have more soft-clips or single read matches
     parse_sam(joined_sam, out_sam.name, 'joined', 'tmp')
     # convert to sorted and indexed bam
-    cmd = 'cat %s %s |samtools view -@ 4 -Shb |sambamba sort -m 8GB --tmpdir %s -t %s -o %s  /dev/stdin' % (args.header,
-                                                                                                            out_sam.name, args.tmpdir,
+
+    cmd = 'cat %s %s |samtools view -@ 4 -Shb |sambamba sort --tmpdir %s -m 4GB -t %s -o %s  /dev/stdin' % (args.header,
+                                                                                                            out_sam.name,args.tmpdir,
                                                                                                             args.threads,
                                                                                                             os.path.join(
                                                                                                                 args.output_dir,
@@ -458,7 +417,7 @@ def main():
     else:
         log = open(args.log, 'a')
     log.write("started run\n")
-    # 2 make reference genome for STAR in appropriate directory
+    # 2 make reference genome fo STAR in appropriate directory
     args = index_STAR(args)
     # 4 map processed reads
     if not os.path.exists(os.path.join(args.output_dir,'header.sam')):
@@ -467,10 +426,8 @@ def main():
         args = map_STAR(args)
         args = make_header(args)
         args = bam_output(args)
-        # args = remove_PCR_duplicates(args)
-        # clean(args)
+    # clean(args)
 
 
 if __name__ == '__main__':
     main()
-
