@@ -9,11 +9,12 @@ rule merge:
         unAssembled_2=temp(expand("{path}/output_denovo/unassembled_2.fastq.gz",  path=config["output_dir"])),
         merged_Assembled=expand("{path}/output_denovo/all.merged.fastq.gz",  path=config["output_dir"])
     params:
-        unAssembled=expand("{path}/output_denovo/unassembled",  path=config["output_dir"])
+        unAssembled=expand("{path}/output_denovo/unassembled",  path=config["output_dir"]),
+        merged=expand("{path}/output_denovo/all.merged.fastq.gz",  path=config["output_dir"])
     threads: 32
     shell:
         "NGmerge -1 {input.R1_in} -2 {input.R2_in} "
-        "-o output/output_denovo/all.merged.fastq.gz -n {threads} -f {params.unAssembled} "
+        "-o {params.merged} -n {threads} -f {params.unAssembled} "
         "-w src/RemoveAdapter_files/qual_profile.txt -q 33 -u 41 -z"
 
 
@@ -21,7 +22,7 @@ rule merge_mono:
     params:
         sample='{sample}',
         inputdir=expand("{path}/output_demultiplex/monos",  path=config["output_dir"]),
-        unAssembled=expand("{path}/output_denovo/",  path=config["output_dir"])
+        outputdir=expand("{path}/output_denovo/",  path=config["output_dir"])
     input:
         R1_in=expand("{path}/output_demultiplex/monos/{sample}.demulti_R1.gz",  path=config["output_dir"],sample=MONOS),
         R2_in=expand("{path}/output_demultiplex/monos/{sample}.demulti_R2.gz",  path=config["output_dir"],sample=MONOS)
@@ -33,8 +34,8 @@ rule merge_mono:
     shell:
         "NGmerge -1 {params.inputdir}/{params.sample}.demulti_R1.gz "
         "-2 {params.inputdir}/{params.sample}.demulti_R2.gz "
-        "-o output/output_denovo/monos/{params.sample}.merged.fastq.gz -n {threads} "
-        "-f output/output_denovo/monos/{params.sample}.joined "
+        "-o {params.outputdir}/monos/{params.sample}.merged.fastq.gz -n {threads} "
+        "-f {params.outputdir}/monos/{params.sample}.joined "
         "-w src/RemoveAdapter_files/qual_profile.txt -q 33 -u 41 -z"
 
 rule combine_joined_all:
