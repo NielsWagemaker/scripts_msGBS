@@ -39,7 +39,7 @@ include: "src/rules/mapping_stats.rules"
 rule all:
     input:
         unAssembled_1=expand("{path}/output_denovo/all.joined.fastq.gz",  path=config["output_dir"]),
-        merged_Assembled=expand("{path}/output_denovo/all.merged.fastq.txt.gz",  path=config["output_dir"]),
+        merged_Assembled=expand("{path}/output_denovo/all.merged.fastq.gz",  path=config["output_dir"]),
         ref=expand("{path}/output_denovo/refBlasted.fa",path=config["output_dir"]),
         log=expand("{path}/mapping/mapping_variantcalling.log",path=config["output_dir"]),
         blast_file=expand("{path}/output_blast/outputblast_kingdoms.tsv",path=config["output_dir"]),
