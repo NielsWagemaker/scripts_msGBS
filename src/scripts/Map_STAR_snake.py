@@ -36,7 +36,7 @@ def parse_args():
     args = parser.parse_args()
     if args.input_dir:
         args.reads_R12 = os.path.join(args.input_dir, 'all.joined.fastq.gz')
-        args.merged = os.path.join(args.input_dir, 'all.merged.fastq.txt.gz')
+        args.merged = os.path.join(args.input_dir, 'all.merged.fastq.gz')
         args.reference = os.path.join(args.input_dir, 'refBlasted.fa')
     if args.output_dir:
         if not os.path.exists(args.output_dir):
@@ -418,11 +418,11 @@ def main():
         log = open(args.log, 'a')
     log.write("started run\n")
     # 2 make reference genome fo STAR in appropriate directory
-    args = index_STAR(args)
     # 4 map processed reads
     if not os.path.exists(os.path.join(args.output_dir,'header.sam')):
         args = process_reads_merged(args)
         args = process_reads_joined(args)
+        args = index_STAR(args)
         args = map_STAR(args)
         args = make_header(args)
         args = bam_output(args)
