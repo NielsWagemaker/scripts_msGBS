@@ -318,6 +318,7 @@ def make_separate_lists(args):
             string =str(string)
             if string in Flower_plants_output_list:
                 flowerdatalist.append(line)
+                eukdatalist.append(line)
                 true =1
             elif string in Eukaryota_list:
                 eukdatalist.append(line)
@@ -344,6 +345,7 @@ def make_separate_lists(args):
             #TODO: make sure all nnnnnnnn are NNNNNNNN ?
             if true == 1:
                 flowerdatalist.append(line)
+                eukdatalist.append(line)
             elif true == 2:
                 eukdatalist.append(line)
             elif true == 3:
