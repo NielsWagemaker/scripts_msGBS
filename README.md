@@ -1,5 +1,9 @@
 # scripts_msGBS
-All msGBS scripts as described in msGBS article
+All msGBS scripts as described in msGBS articles -
+A:  msGBS: A new high-throughput approach to quantify the relative species abundance in root samples of multispecies plant communities, 2020, Molecular ecology Resources, https://doi.org/10.1111/1755-0998.13278
+B:  msGBS: A field study, article in progress, a collaboration with Dina in 't Zandt.
+
+The first article (A) is a method paper describing and evaluating the use of GBS with multi species plant root mixtures with the aim of quantifiying the relative contribution of the different species within the mixtures in a calibrated and non-calibrated way. The first enabling the comparison between species within samples and the second within species between samples. The second article (B, in prep) aims to apply msGBS in "natural" systems were >40 species can be present simultaniously. Here we did not apply a calibration as it is not always feasible to prepare these for highly biodiverse samples. The msGBS methods is recently also applied to Bee pollen mixtures and Diatom mixtures.
 
 # Requirements:
 1.Clone pipeline from git
